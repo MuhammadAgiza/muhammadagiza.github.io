@@ -1,13 +1,13 @@
 {
   "basics": {
     "name": "Muhammad Agiza",
-    "label": "Student",
-    "picture": "https://github.com/kambergjohnson.png",
-    "email": "magiza2000@gmial.com",
+    "label": "Software Engineer",
+    "picture": "https://github.com/muhammadagiza.png",
+    "email": "magiza2000@gmail.com",
     "phone": "+201015980581",
     "website": "https://muhammadagiza.github.io",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2024.",
-    "location": { "address": "", "postalCode": "", "city": "Al Mansoura", "countryCode": "EGY", "region": "" },
+    "summary": "A Graduated Electronics & Communication Engineer, Whom has Passion for Software Development specially backend",
+    "location": { "address": "", "postalCode": "", "city": "El Mansoura", "countryCode": "Egypt", "region": "Al Daqahliyah" },
     "profiles": [
       { "network": "github", "username": "muhammadagiza", "url": "http://github.com/muhammadagiza" },
       { "network": "linkedin", "username": "muhammadagiza", "url": "http://linkedin.com/in/muhammadagiza" },
@@ -16,7 +16,9 @@
     ]
   },
   "interests": [
-    { "name": "Software" }
+    { "name": "Software" },
+    { "name": "Databases" },
+    { "name": "Backend Development" }
   ],
   "skills": [
     {
@@ -25,35 +27,37 @@
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "MacOS", "Ubuntu", "Git/GitHub" ]
+      "keywords": [ "MacOS", "Windows", "Ubuntu", "Git/GitHub", "Microsoft Office" ]
     }
   ],
   "education": [
     {
       "institution": "Mansoura College Academy",
       "area": "Electronics & Communication Engineering",
+      "website": "https://mc.edu.eg/",
       "studyType": "Bachelor's degree",
       "startDate": "2018",
       "endDate": "2023",
+      "gpa": "3.74",
       "courses": [
       ]
     }
   ],
   "work": [
     {
-      "company": "UH Manoa Board of Publications",
-      "position": "Web Developer",
-      "website": "",
-      "startDate": "2015-08-01",
-      "endDate": "Present",
-      "summary": "Head of online presence for Ka Leo",
+      "company": "Dipdux Analytica",
+      "position": "Software Backend Engineer",
+      "website": "https://dipdux.com/",
+      "startDate": "2021-10-01",
+      "endDate": "2023-11-01",
+      "summary": "Software Department",
       "highlights": [
-        "Maintain, update, and oversee official college newspaper website",
-        "Drive, design and build student-community projects for UH Manoa"
+        "Maintain, update, and oversee company projects",
+        "Drive and build backend projects"
       ]
     }
   ],
-  "volunteer": [
+  "_volunteer": [
     {
       "organization": "Center for Renewable Energy and Island Sustainability",
       "website": "http://manoa.hawaii.edu/reis",
@@ -67,9 +71,7 @@
       ]
     }
   ],
-  "awards": [
-  ],
-  "references": [
+  "_references": [
     {
       "name": "Available upon request"
     }
