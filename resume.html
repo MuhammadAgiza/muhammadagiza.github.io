@@ -95,7 +95,7 @@ layout: home
                   {% assign details_list = details_list | push: honor_detail %}
               {% endif %}
               {% if details_list.size > 0 %}
-                  <p class="m-0">{{ details_list | join: " | " }}</p> {# Join details with a separator #}
+                  <p class="m-0">{{ details_list | join: " | " }}</p>
               {% endif %}
               {% if entry.courses %}
                 <ul>
@@ -214,20 +214,25 @@ layout: home
       </div>
     {% endif %}
 
-    {% if site.data.bio.awards %}
+    {% if site.data.bio.certifications %}
     <div class="row pt-4 align-items-start">
       <div class="col-lg-3">
-        <h1 class="display-6 text-start m-0">Awards</h1>
+        <h1 class="display-6 text-start m-0">Certification</h1>
       </div>
 
       <div class="col-lg-9">
-      {% for entry in site.data.bio.awards %}
+      {% for entry in site.data.bio.certifications %}
         <div class="row mb-3">
           <div class="col-9">
-            <p class="mb-0">
-              <b>{{ entry.title }}</b>, {{ entry.awarder }}
-            </p>
-            <p class="mb-0">{{ entry.summary }}</p>
+            <p class="mb-0"><b>{{ entry.title }}</b></p>
+            <p class="mb-0">{{ entry.issuer }}</p>
+            {% if entry.highlights %}
+            <ul>
+            {% for highlight in entry.highlights %}
+              <li>{{ highlight }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
           </div>
           <div class="col-3">
             <p class="m-0 text-end">

@@ -43,6 +43,11 @@
       "classRanking": "5th of the class", 
       "honor": true,
       "courses": [
+        "Built a strong foundation in electrical engineering principles, digital systems, and communications.",
+        "Developed expertise in electronics, circuit design, and microprocessor applications.",
+        "Applied simulation, modeling, and testing techniques to real-world electrical systems.",
+        "Strengthened problem-solving skills through digital and analog circuit analysis projects.",
+        "Enhanced technical communication and teamwork through collaborative engineering projects."
       ]
     }
   ],
@@ -58,6 +63,17 @@
         "Develop and build backend projects",
         "Maintain, update, and oversee company projects",
         "Designed and developed REST APIs."
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Cisco Certified Network Associate (CCNA v7)",
+      "date": "2023",
+      "issuer": "National Telecommunication Institute (NTI)",
+      "highlights": [
+        "Gained practical networking experience using Cisco Packet Tracer and remote labs to configure routers, switches, and core network protocols.",
+        "Mastered core networking concepts including IPv4/IPv6 addressing, VLANs, ACLs, NAT, and WAN technologies."
       ]
     }
   ],
