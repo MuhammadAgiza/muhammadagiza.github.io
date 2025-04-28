@@ -1,0 +1,120 @@
+{
+    "changelog": [
+        {
+            "version": "0.1.0",
+            "title": "The Beginning",
+            "company": "",
+            "date": "2021",
+            "added": [
+                "The beginning of my journey into professional software development with a passion for problem-solving and technology.",
+                "Start learning <code>Nodejs</code>"
+            ],
+            "changed": [
+                "Dropped <code>C#</code>."
+            ],
+            "deprecated": [],
+            "removed": [],
+            "fixed": []
+        },
+        {
+            "version": "1.0.0",
+            "title": "Backend Developer",
+            "company": "Dipdux Analytica",
+            "date": "Oct 2021",
+            "added": [
+                "Building of <a href=\"https://en.wikipedia.org/wiki/REST\" target=\"_blank\">REST</a> APIs.",
+                "Use of <code>Nodejs</code>, <code>JavaScript</code>.",
+                "Use of <code>ClickUp</code> as company team management tool.",
+                "Use of <code>Telegram</code> as company team chat tool."
+            ],
+            "changed": [],
+            "deprecated": [],
+            "removed": [],
+            "fixed": []
+        },
+        {
+            "version": "1.2.0",
+            "title": "Backend Developer",
+            "company": "Dipdux Analytica",
+            "added": [
+                "Use of <a href=\"https://en.wikipedia.org/wiki/Agile_software_development\" target=\"_blank\">Agile methodologies</a>.",
+                "Use of <a href=\"https://en.wikipedia.org/wiki/Continuous_integration\" target=\"_blank\">Continuous Integration (CI)</a> pipelines.",
+                "Use of <a href=\"https://en.wikipedia.org/wiki/SOLID\" target=\"_blank\">SOLID principles</a>.",
+                "Use of <code>TypeScript</code>."
+            ],
+            "changed": [
+                "Start using <code>TypeScript</code> over <code>JavaScript</code>",
+                "Start using <code>Jira</code> over <code>ClickUp</code>",
+                "Start using <code>Discord</code> over <code>Telegram</code>"
+            ],
+            "deprecated": [],
+            "removed": [],
+            "fixed": []
+        },
+        {
+            "version": "1.3.0",
+            "title": "Backend Developer",
+            "company": "Dipdux Analytica",
+            "added": [
+                "Skills to develop <a href=\"https://en.wikipedia.org/wiki/Software_as_a_service\" target=\"_blank\">SaaS solutions</a>.",
+                "Knowledge in the E-Learning industry.",
+                "Knowledge in the Real-state industry."
+            ],
+            "changed": [],
+            "deprecated": [],
+            "removed": [],
+            "fixed": []
+        },
+        {
+            "version": "1.4.0",
+            "title": "Backend Developer",
+            "company": "Dipdux Analytica",
+            "date": "Jan 2023",
+            "added": [
+                "Knowledge in the e-commerce industry.",
+                "Use of <a href=\"https://github.com/features/copilot\" target=\"_blank\">GitHub Copilot</a> as my coding buddy."
+            ],
+            "changed": [],
+            "deprecated": [],
+            "removed": [],
+            "fixed": []
+        },
+        {
+            "version": "2.1.0",
+            "title": "Freelance Backend Engineer",
+            "date": "Nov 2023",
+            "added": [],
+            "changed": [],
+            "deprecated": [
+                "Left Dipdux Analytica."
+            ],
+            "removed": [],
+            "fixed": []
+        },
+        {
+            "version": "2.2.0",
+            "title": "Solider",
+            "company": "Egyptian Armed Forces",
+            "date": "Jan 2024 - Mar 2025",
+            "added": [
+                "Finished my Mandatory Military Service."
+            ],
+            "changed": [],
+            "deprecated": [],
+            "removed": [],
+            "fixed": [
+                "Travel abroad is possible."
+            ]
+        },
+        {
+            "version": "2.3.0",
+            "title": "Freelance Backend Engineer",
+            "date": "Mar 2025 - Present",
+            "added": [],
+            "changed": [],
+            "deprecated": [],
+            "removed": [],
+            "fixed": []
+        }
+    ]
+}

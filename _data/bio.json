@@ -7,7 +7,8 @@
     "email": "magiza2000@gmail.com",
     "phone": "+201015980581",
     "website": "https://muhammadagiza.github.io",
-    "summary": "A Graduated Electronics & Communication Engineer, Whom has Passion for Software Development specially backend",
+    "summary": "A Graduated Electronics & Communication Engineer, with Experience on backend software development and passion for problem-solving and technology.",
+    "full_summary": "A Graduated Electronics & Communication Engineer, with Experience on backend software development and passion for problem-solving and technology.",
     "location": { "address": "", "postalCode": "", "city": "El Mansoura", "countryCode": "Egypt", "region": "Al Daqahliyah" },
     "profiles": [
       { "network": "github", "username": "muhammadagiza", "url": "http://github.com/muhammadagiza" },
@@ -24,7 +25,7 @@
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C#", "C", "Python", "PHP", "Javascript", "Typescript", "Nodejs", "Laravel", "Arduino" ]
+      "keywords": [ "C#", "C", "Python", "PHP", "Javascript", "Typescript", "Nodejs", "Laravel", "Arduino", "MySQL" ]
     },
     {
       "name": "Toolsets/OS",
