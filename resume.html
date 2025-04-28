@@ -8,7 +8,7 @@ layout: home
 
     <div class="row">
       <div class="col">
-        <h1 class="display-4 text-center">{{ site.data.bio.basics.name }}</h1>
+        <h1 class="display-4 text-center">{{ site.data.bio.basics.fullname }}</h1>
       </div>
     </div>
 
@@ -81,8 +81,21 @@ layout: home
               <p class="m-0"><b>{{ entry.institution }}</b></p>
               <p class="mb-0"><a href="{{ entry.website }}">{{ entry.website | remove: "http://" | remove: "https://" }}</a></p>
               <p class="m-0">{{ entry.studyType }}, {{ entry.area }}</p>
+              {% assign details_list = "" | split: "," %}
               {% if entry.gpa %}
-              <p class="m-0">GPA: {{ entry.gpa }}</p>
+                  {% assign gpa_detail = "GPA: <b>" | append: entry.gpa | append: "</b>" %}
+                  {% assign details_list = details_list | push: gpa_detail %}
+              {% endif %}
+              {% if entry.classRanking %}
+                  {% assign rank_detail = "Class Rank: <b>" | append: entry.classRanking | append: "</b>" %}
+                  {% assign details_list = details_list | push: rank_detail %}
+              {% endif %}
+              {% if entry.honor %}
+                  {% assign honor_detail = "<b>With Honors</b>" %}
+                  {% assign details_list = details_list | push: honor_detail %}
+              {% endif %}
+              {% if details_list.size > 0 %}
+                  <p class="m-0">{{ details_list | join: " | " }}</p> {# Join details with a separator #}
               {% endif %}
               {% if entry.courses %}
                 <ul>

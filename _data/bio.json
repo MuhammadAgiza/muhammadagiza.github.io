@@ -1,6 +1,7 @@
 {
   "basics": {
     "name": "Muhammad Agiza",
+    "fullname": "Muhammad Abd Al-Jalil Al-Adawy Agiza",
     "label": "Software Engineer",
     "picture": "https://github.com/muhammadagiza.png",
     "email": "magiza2000@gmail.com",
@@ -34,11 +35,13 @@
     {
       "institution": "Mansoura College Academy",
       "area": "Electronics & Communication Engineering",
-      "website": "https://mc.edu.eg/",
+      "website": "https://mca.edu.eg",
       "studyType": "Bachelor's degree",
       "startDate": "2018",
       "endDate": "2023",
       "gpa": "3.74",
+      "classRanking": "5th of the class", 
+      "honor": true,
       "courses": [
       ]
     }
@@ -47,27 +50,14 @@
     {
       "company": "Dipdux Analytica",
       "position": "Software Backend Engineer",
-      "website": "https://dipdux.com/",
+      "website": "https://dipdux.com",
       "startDate": "2021-10-01",
       "endDate": "2023-11-01",
       "summary": "Software Department",
       "highlights": [
+        "Develop and build backend projects",
         "Maintain, update, and oversee company projects",
-        "Drive and build backend projects"
-      ]
-    }
-  ],
-  "_volunteer": [
-    {
-      "organization": "Center for Renewable Energy and Island Sustainability",
-      "website": "http://manoa.hawaii.edu/reis",
-      "position": "Software Developer",
-      "startDate": "2016-01-01",
-      "endDate": "Present",
-      "summary": "Lead developer for weather sensing project",
-      "highlights": [
-        "Design firmware for distributed weather sensor network",
-        "Maintain custom data collection and storage infrastructure"
+        "Designed and developed REST APIs."
       ]
     }
   ],
