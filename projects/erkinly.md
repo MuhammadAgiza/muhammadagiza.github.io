@@ -2,11 +2,14 @@
 layout: project
 type: project
 image: img/erkinly/erkinly-square.jpeg
+thumbnail: img/erkinly/erkinly-square.jpeg
 title: "Erkinly"
 date: 2023
 published: true
 labels:
   - TypeScript
+  - Nodejs
+  - RESTful APIs
   - MySql
   - Arduino
   - GitHub
@@ -17,7 +20,6 @@ summary: "A fully functional prototype of an Automated Parking System (APS) inte
 
 <!-- <img class="img-fluid" src="../img/erkinly/erkinly-square.jpeg"> -->
 
-## Project Title:
 **Erkinly — Fully Automated Smart Parking Garage Prototype**
 
 ---

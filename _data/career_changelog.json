@@ -109,8 +109,11 @@
         {
             "version": "2.3.0",
             "title": "Freelance Backend Engineer",
-            "date": "Mar 2025 - Present",
-            "added": [],
+            "date": "2025",
+            "added": [
+                "Use of <code>PHP</code>, <code>Laravel</code>.",
+                "Use of <a href=\"https://en.wikipedia.org/wiki/vibe_coding\" target=\"_blank\">Vibe Coding</a>."
+            ],
             "changed": [],
             "deprecated": [],
             "removed": [],

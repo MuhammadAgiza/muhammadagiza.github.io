@@ -1,13 +1,16 @@
 ---
 layout: project
 type: project
-image: img/sastamah/sastamah-square.jpeg
+image: img/sastamah/sastamah_square.jpg
+thumbnail: img/sastamah/sastamah_square.jpg
 title: "Sastamah"
 date: 2024
 published: true
 labels:
   - TypeScript
   - MySql
+  - Nodejs
+  - RESTful APIs
   - Lifestyle
 summary: "A lifestyle application crafted to simplify daily routines through efficient, collaborative reminder management."
 ---
