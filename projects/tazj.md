@@ -14,7 +14,7 @@ labels:
   - E-Commerce
 summary: "A UAE-based grocery delivery app rebuilt from scratch with a focus on vendor-first shopping, multilingual support, and same-day delivery."
 ---
-# Tazj – Fresh Grocery Delivery App (UAE)
+**Tazj – Fresh Grocery Delivery App (UAE)**
 
 ## Overview
 

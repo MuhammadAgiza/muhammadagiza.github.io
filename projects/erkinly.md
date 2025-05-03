@@ -1,8 +1,8 @@
 ---
 layout: project
 type: project
-image: img/erkinly/erkinly-square.jpeg
-thumbnail: img/erkinly/erkinly-square.jpeg
+image: img/erkinly/erkinly-square.jpg
+thumbnail: img/erkinly/erkinly-square.jpg
 title: "Erkinly"
 date: 2023
 published: true
@@ -18,7 +18,7 @@ labels:
 summary: "A fully functional prototype of an Automated Parking System (APS) integrates hardware control, server communication, and a touch-screen driver interface, providing a seamless, efficient, and secure parking experience."
 ---
 
-<!-- <img class="img-fluid" src="../img/erkinly/erkinly-square.jpeg"> -->
+<img class="img-fluid" style="height: 300px;" src="../img/erkinly/erkinly-1.jpeg">
 
 **Erkinly — Fully Automated Smart Parking Garage Prototype**
 
