@@ -100,5 +100,4 @@ All payments and user verifications are managed securely through the mobile appl
 ## Source Code:
 GitHub Organization: [https://github.com/Erkinly](https://github.com/Erkinly)
 
----
 

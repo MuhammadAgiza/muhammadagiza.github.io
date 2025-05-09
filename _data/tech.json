@@ -1,0 +1,61 @@
+{
+    "technologies": [
+        {
+            "name" : "Node.js",
+            "icon" : "img/technology/node-js.svg"
+        },
+        {
+            "name" : "Express.js",
+            "icon" : "img/technology/express.svg"
+        },
+        {
+            "name" : "Javascript",
+            "icon" : "img/technology/javascript.svg"
+        },
+        {
+            "name" : "Typescript",
+            "icon" : "img/technology/typescript.svg"
+        },
+        {
+            "name" : "Git",
+            "icon" : "img/technology/git.svg"
+        },
+        {
+            "name" : "Laravel",
+            "icon" : "img/technology/laravel.svg"
+        },
+        {
+            "name" : "PHP",
+            "icon" : "img/technology/php.svg"
+        },
+        {
+            "name" : "MySql",
+            "icon" : "img/technology/mysql.svg"
+        },
+        {
+            "name" : "Firebase",
+            "icon" : "img/technology/firebase.svg"
+        },
+        {
+            "name" : "cPanel",
+            "icon" : "img/technology/cpanel.svg"
+        },
+        {
+            "name" : "VS Code",
+            "icon" : "img/technology/vs-code.svg"
+        },
+        {
+            "name" : "Arduino",
+            "icon" : "img/technology/arduino.svg"
+        },
+        {
+            "name" : "C#",
+            "icon" : "img/technology/c-sharp.svg"
+        },
+        {
+            "name" : "Linux",
+            "icon" : "img/technology/linux.svg"
+        }
+
+    ]
+}

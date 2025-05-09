@@ -3,6 +3,12 @@ layout: home
 ---
 
 <div class="container py-4">
-  <h1 class="display-4">{{ page.title }}</h1>
- {{ content }}
+  <div class="d-flex justify-content-between align-items-center">
+    <h1 class="display-4 mb-0">{{ page.title }}</h1>
+    {% if page.date %}<span class="date">{{ page.date }}</span>{% endif %}
+  </div>
+  <hr>
+  {{ content }}
+
+  {% include projects/project-navigation.html %}
 </div>

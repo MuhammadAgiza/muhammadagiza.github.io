@@ -1,0 +1,41 @@
+{% assign projects = site.pages | where: "type", "project" | sort: "date" | reverse %}
+{% assign num_projects = projects | size %}
+
+{% assign project_index0 = nil %}
+{% for proj_item in projects %}
+{% if proj_item.url == page.url %}
+{% assign project_index0 = forloop.index0 %}
+{% break %}
+{% endif %}
+{% endfor %}
+
+{% assign next_project = nil %}
+{% assign prev_project = nil %}
+
+{% if project_index0 != nil %}
+{% assign next_project_index = project_index0 | plus: 1 %}
+{% assign prev_project_index = project_index0 | minus: 1 %}
+
+{% assign next_project = projects[next_project_index] %}
+{% assign prev_project = projects[prev_project_index] %}
+
+{% if next_project == nil and next_project_index == num_projects | minus: 1 and num_projects > 1 %}
+{% assign next_project = projects[0] %}
+{% endif %}
+{% endif %}
+
+{% if prev_project or next_project %}
+<hr>
+<div class="row">
+    <div class="col-md-6 mb-3 mb-md-0">
+        {% if prev_project %}
+        {% include projects/project-card-small.html page=prev_project %}
+        {% endif %}
+    </div>
+    <div class="col-md-6">
+        {% if next_project %}
+        {% include projects/project-card-small.html page=next_project %}
+        {% endif %}
+    </div>
+</div>
+{% endif %}

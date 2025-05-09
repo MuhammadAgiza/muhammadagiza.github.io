@@ -103,7 +103,8 @@ layout: home
           <div class="col-9">
             <p class="m-0"><b>{{ entry.institution }}</b></p>
             {% if entry.website %}
-            <p class="mb-0"><a href="{{ entry.website }}" target="_blank">{{ entry.website | remove: "http://" | remove: "https://"
+            <p class="mb-0"><a href="{{ entry.website }}" target="_blank">{{ entry.website | remove: "http://" | remove:
+                "https://"
                 }}</a></p>
             {% endif %}
             <p class="m-0">{{ entry.studyType }}, {{ entry.area }}</p>
@@ -147,6 +148,9 @@ layout: home
               {% endif %}
               {% endif %}
             </p>
+            <p class="m-0 text-end">
+              {% if entry.location %}{{ entry.location }}{% endif %}
+            </p>
           </div>
         </div>
         {% endfor %}
@@ -165,7 +169,8 @@ layout: home
           <div class="col-9">
             <p class="mb-0"><b>{{ entry.position }}, {{ entry.company }}</b></p>
             {% if entry.website %}
-            <p class="mb-0"><a href="{{ entry.website }}" target="_blank">{{ entry.website | remove: "http://" | remove: "https://"
+            <p class="mb-0"><a href="{{ entry.website }}" target="_blank">{{ entry.website | remove: "http://" | remove:
+                "https://"
                 }}</a></p>
             {% endif %}
             <p class="mb-0">{{ entry.summary }}</p>
@@ -193,6 +198,9 @@ layout: home
               {% endif %}
               {% endif %}
             </p>
+            <p class="m-0 text-end">
+              {% if entry.location %}{{ entry.location }}{% endif %}
+            </p>
           </div>
         </div>
         {% endfor %}
@@ -212,7 +220,8 @@ layout: home
             <p class="mb-0"><b>{{ entry.position }}{% if entry.organization %}, {{ entry.organization }}{% endif %}</b>
             </p>
             {% if entry.website %}
-            <p class="mb-0"><a href="{{ entry.website }}" target="_blank">{{ entry.website | remove: "http://" | remove: "https://"
+            <p class="mb-0"><a href="{{ entry.website }}" target="_blank">{{ entry.website | remove: "http://" | remove:
+                "https://"
                 }}</a></p>
             {% endif %}
             <p class="mb-0">{{ entry.summary }}</p>
@@ -270,6 +279,9 @@ layout: home
           <div class="col-3">
             <p class="m-0 text-end">
               {{ entry.date}}
+            </p>
+            <p class="m-0 text-end">
+              {% if entry.location %}{{ entry.location }}{% endif %}
             </p>
           </div>
         </div>

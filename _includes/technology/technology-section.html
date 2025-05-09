@@ -1,0 +1,23 @@
+{% assign technologies = site.data.tech.technologies %}
+
+
+<div id="technology-section">
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <h2 class="display-5 text-start">Technologies</h2>
+            </div>
+        </div>
+
+        <div class="row d-flex row-cols-3 row-cols-sm-4 row-cols-md-6 row-cols-lg-8 gx-1">
+            {% for tech in technologies %}
+            <div class="col mb-4 d-flex flex-column align-items-center">
+                {% if tech.icon %}
+                <img src="{{ site.baseurl }}/{{ tech.icon }}" alt="{{ tech.name }} icon" class="img-fluid mb-2" style="height: 40px; max-width: 40px; object-fit: contain;">
+                {% endif %}
+                <p class="mb-0" style="font-size: 0.8rem;">{{ tech.name }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

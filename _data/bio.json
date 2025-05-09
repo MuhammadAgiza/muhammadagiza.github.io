@@ -7,8 +7,8 @@
     "email": "magiza2000@gmail.com",
     "phone": "+201015980581",
     "website": "https://muhammadagiza.github.io",
-    "summary": "A Graduated Electronics & Communication Engineer, with Experience on backend software development and passion for problem-solving and technology.",
-    "full_summary": "A Graduated Electronics & Communication Engineer, with Experience on backend software development and passion for problem-solving and technology.",
+    "summary": "Backend Software Engineer with an Electronics & Communication Engineering background, skilled in Node.js and REST API development. Passionate about problem-solving and technology.",
+    "full_summary": "Electronics & Communication Engineering graduate with demonstrated experience as a Backend Software Engineer. Proficient in designing and developing robust REST APIs with Node.js, integrating databases like MySQL and Firebase, and applying SOLID principles within Agile environments. Passionate about leveraging technology to build scalable SaaS solutions and solve complex challenges.",
     "location": { "address": "", "postalCode": "", "city": "El Mansoura", "countryCode": "Egypt", "region": "Al Daqahliyah" },
     "profiles": [
       { "network": "github", "username": "muhammadagiza", "url": "http://github.com/muhammadagiza" },
@@ -29,7 +29,7 @@
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "MacOS", "Windows", "Ubuntu", "Git/GitHub", "Microsoft Office" ]
+      "keywords": [ "MacOS", "Windows", "Ubuntu", "Git/GitHub", "Microsoft Office", "VS Code" ]
     }
   ],
   "education": [
@@ -38,6 +38,7 @@
       "area": "Electronics & Communication Engineering",
       "website": "https://mca.edu.eg",
       "studyType": "Bachelor's degree",
+      "location": "El Mansoura, Egypt",
       "startDate": "2018",
       "endDate": "2023",
       "gpa": "3.74",
@@ -59,11 +60,14 @@
       "website": "https://dipdux.com",
       "startDate": "2021-10-01",
       "endDate": "2023-11-01",
+      "location": "Remotely",
       "summary": "Software Department",
       "highlights": [
-        "Develop and build backend projects",
-        "Maintain, update, and oversee company projects",
-        "Designed and developed REST APIs."
+        "Designed and developed robust REST APIs leveraging Node.js, integrating with databases like MySQL and Firebase to enhance backend system stability and functionality.",
+        "Applied SOLID principles in daily backend development tasks, contributing to more maintainable and higher-quality code.",
+        "Actively participated within Agile development methodologies, contributing to improved team workflow and project adaptability.",
+        "Utilized Continuous Integration (CI) pipelines as part of the development process to help streamline deployments.",
+        "Contributed significantly to the backend development and scaling of various Software as a Service (SaaS) solutions across E-Learning, Real-estate, and e-commerce industries."
       ]
     }
   ],
@@ -72,6 +76,7 @@
       "title": "Cisco Certified Network Associate (CCNA v7)",
       "date": "2023",
       "issuer": "National Telecommunication Institute (NTI)",
+      "location": "Online",
       "highlights": [
         "Gained practical networking experience using Cisco Packet Tracer and remote labs to configure routers, switches, and core network protocols.",
         "Mastered core networking concepts including IPv4/IPv6 addressing, VLANs, ACLs, NAT, and WAN technologies."
