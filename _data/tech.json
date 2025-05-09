@@ -25,6 +25,10 @@
             "icon" : "img/technology/laravel.svg"
         },
         {
+            "name" : "Filament",
+            "icon" : "img/technology/filament.svg"
+        },
+        {
             "name" : "PHP",
             "icon" : "img/technology/php.svg"
         },
@@ -41,10 +45,6 @@
             "icon" : "img/technology/cpanel.svg"
         },
         {
-            "name" : "VS Code",
-            "icon" : "img/technology/vs-code.svg"
-        },
-        {
             "name" : "Arduino",
             "icon" : "img/technology/arduino.svg"
         },
@@ -55,6 +55,10 @@
         {
             "name" : "Linux",
             "icon" : "img/technology/linux.svg"
+        },
+        {
+            "name" : "Postman",
+            "icon" : "img/technology/postman.svg"
         }
 
     ]
