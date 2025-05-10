@@ -1,5 +1,5 @@
 {% assign technologies = site.data.tech.technologies %}
-
+<script src="{{ site.baseurl }}/assets/js/infinite-scroll.js"></script>
 
 <div id="technology-section">
     <div class="container">
@@ -9,15 +9,30 @@
             </div>
         </div>
 
-        <div class="row d-flex row-cols-3 row-cols-sm-4 row-cols-md-6 row-cols-lg-8 gx-1">
+        <div class="row d-flex flex-nowrap gx-5 infinite-scroll" data-infinite-scroll>
             {% for tech in technologies %}
             <div class="col mb-4 d-flex flex-column align-items-center">
                 {% if tech.icon %}
-                <img src="{{ site.baseurl }}/{{ tech.icon }}" alt="{{ tech.name }} icon" class="img-fluid mb-2" style="height: 40px; max-width: 40px; object-fit: contain;">
+                <img src="{{ site.baseurl }}/{{ tech.icon }}" alt="{{ tech.name }} icon" class="img-fluid mb-2"
+                    style="height: 45px; max-width: 45px; object-fit: contain;">
                 {% endif %}
-                <p class="mb-0" style="font-size: 0.8rem;">{{ tech.name }}</p>
+                <p class="mb-0" style="font-size: 0.9rem;">{{ tech.name }}</p>
             </div>
             {% endfor %}
         </div>
     </div>
 </div>
+
+<style>
+    .infinite-scroll {
+        display: flex;
+        overflow-x: auto;
+        position: relative;
+        white-space: nowrap;
+        scrollbar-width: none;
+    }
+
+    .infinite-scroll::-webkit-scrollbar {
+        display: none; 
+    }
+</style>
