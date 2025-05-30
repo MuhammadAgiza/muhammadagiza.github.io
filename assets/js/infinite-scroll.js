@@ -34,6 +34,17 @@ document.addEventListener("DOMContentLoaded", function () {
             animationFrameId = requestAnimationFrame(scrollLoop);
         }
 
+        function updateScrollAmountFromPhysical() {
+            const currentPhysicalScroll = scrollContainer.scrollLeft;
+            const halfWidth = scrollContainer.scrollWidth / 2;
+            if (halfWidth > 0) {
+                // Ensure scrollAmount is the logical position within the first half
+                scrollAmount = currentPhysicalScroll % halfWidth;
+            } else {
+                scrollAmount = currentPhysicalScroll;
+            }
+        }
+
         scrollContainer.addEventListener('scroll', () => {
             if (programmaticScroll) {
                 programmaticScroll = false;
@@ -74,24 +85,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
         scrollContainer.addEventListener("mouseenter", () => {
             isHovering = true;
-            const currentPhysicalScroll = scrollContainer.scrollLeft;
-            const halfWidth = scrollContainer.scrollWidth / 2;
-            if (halfWidth > 0) {
-                scrollAmount = currentPhysicalScroll % halfWidth;
-            } else {
-                scrollAmount = currentPhysicalScroll;
-            }
+            updateScrollAmountFromPhysical();
         });
 
         scrollContainer.addEventListener("mouseleave", () => {
             isHovering = false;
-            const currentPhysicalScroll = scrollContainer.scrollLeft;
-            const halfWidth = scrollContainer.scrollWidth / 2;
-            if (halfWidth > 0) {
-                scrollAmount = currentPhysicalScroll % halfWidth;
-            } else {
-                scrollAmount = currentPhysicalScroll;
-            }
+            updateScrollAmountFromPhysical(); // Ensure scrollLoop resumes from the correct logical position
+        });
+
+        // Touch screen support
+        scrollContainer.addEventListener("touchstart", () => {
+            isHovering = true;
+            updateScrollAmountFromPhysical();
+        }, { passive: true });
+
+        scrollContainer.addEventListener("touchend", () => {
+            isHovering = false;
+            updateScrollAmountFromPhysical();
+        });
+
+        scrollContainer.addEventListener("touchcancel", () => {
+            isHovering = false;
+            updateScrollAmountFromPhysical();
         });
 
         if (originalItemCount > 0) {

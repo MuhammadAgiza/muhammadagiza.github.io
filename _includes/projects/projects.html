@@ -1,33 +1,57 @@
+{% assign keyword = include.keyword | strip %}
+
 <div style="background-color: var(--tf-projects-bg-color)" class="bg-gradient py-3" id="projects">
   <div class="container">
     <div class="row mb-3">
       <div class="col-md-6">
-        <h1 class="display-4 text-start">Projects</h1>
+        <h1 class="display-4 text-start">
+          Projects
+          {% if keyword and keyword != "" %}
+          <span class="badge bg-dark fw-normal fs-6 align-middle">
+            {{ keyword }}
+            <a href="{{ site.baseurl }}/projects/" class="text-light ms-1"
+              style="text-decoration: none; font-size: 0.75em; vertical-align: middle;"
+              title="Clear filter: {{ keyword }}" aria-label="Clear filter for keyword: {{ keyword }}">
+              {% include icon.html name="x" %}
+            </a>
+          </span>
+          {% endif %}
+        </h1>
       </div>
     </div>
 
-    <div class="vstack gap-3">
-      {% assign project_pages = site.pages | where: "type", "project" | sort: "date" | reverse %}
-      {% for page in project_pages %}
-        {% unless page.draft %}
-          {% include projects/project-card.html page=page %}
-        {% endunless %}
-        {% if forloop.index == include.limit %}
-          {% break %}
-        {% endif %}
-      {% endfor %}
-    </div>
+    <div class="row row-cols-1 g-4">
+      {% assign all_project_pages = site.pages | where: "type", "project" | sort: "date" | reverse %}
+      {% assign displayed_any_project = false %}
 
-    {% assign not_draft = 0 %}
-      {% for page in project_pages %}
+      {% for page in all_project_pages %}
       {% unless page.draft %}
-        {% assign not_draft = not_draft | plus: 1 %}
+      {% assign show_this_project = true %}
+
+      {% if keyword and keyword != "" %}
+      {% comment %} If a keyword is provided, we must match it. {% endcomment %}
+      {% if page.labels and page.labels contains keyword %}
+      {% comment %} Label matches, keep show_this_project true. {% endcomment %}
+      {% else %}
+      {% assign show_this_project = false %} {% comment %} Label does not match, or page has no labels. {% endcomment %}
+      {% endif %}
+      {% endif %}
+
+      {% if show_this_project %}
+      <div class="col">
+        {% include projects/project-card.html page=page %}
+      </div>
+      {% assign displayed_any_project = true %}
+      {% endif %}
       {% endunless %}
-    {% endfor %}
+      {% endfor %}
 
-    {% if not_draft > include.limit %}
-      <p class="text-center pt-4"><a href="{{ site.baseurl}}/projects/">See all {{ not_draft }} projects</a></p>
-    {% endif %}
-
+      {% unless displayed_any_project %}
+      <div class="col">
+        <p class="text-center text-muted">No projects found{% if keyword and keyword != "" %} matching the label "{{
+          keyword }}"{% endif %}.</p>
+      </div>
+      {% endunless %}
+    </div>
   </div>
 </div>

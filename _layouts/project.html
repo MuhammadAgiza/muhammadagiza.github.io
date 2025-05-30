@@ -3,12 +3,26 @@ layout: home
 ---
 
 <div class="container py-4">
-  <div class="d-flex justify-content-between align-items-center">
-    <h1 class="display-4 mb-0">{{ page.title }}</h1>
-    {% if page.date %}<span class="date">{{ page.date }}</span>{% endif %}
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <div class="d-flex align-items-center">
+      <a href="/projects/" class="btn btn-sm btn-link text-secondary text-decoration-none me-3 ps-0" aria-label="Back to Projects" title="Back to Projects">
+        {% include icon.html name="arrow-left" %}
+      </a>
+      <h1 class="display-5 mb-0">{{ page.title }}</h1>
+    </div>
+    {% if page.date %}
+      <span class="badge bg-light text-dark fw-normal p-2">{{ page.date }}</span>
+    {% endif %}
   </div>
-  <hr>
-  {{ content }}
 
-  {% include projects/project-navigation.html %}
+  <hr class="my-4">
+
+  <div class="bg-white p-4 p-md-5 rounded shadow-sm mb-4">
+    {{ content }}
+  </div>
+
+  
+  <div class="project-navigation-footer pt-4 mt-4 border-top">
+    {% include projects/project-navigation.html %}
+  </div>
 </div>

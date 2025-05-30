@@ -1,9 +1,60 @@
+<style>
+  .name-email-link {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    /* line-height: 1.2em; /* Optional: Adjust if vertical alignment needs tweaking */
+  }
+
+  .name-email-link .default-text,
+  .name-email-link .hover-text {
+    transition: opacity 0.3s ease-in-out;
+    white-space: nowrap;
+  }
+  .name-email-link .default-text,
+  .name-email-link .hover-text {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    white-space: nowrap;
+    display: inline-block;
+  }
+
+  .name-email-link .default-text {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .name-email-link:hover .default-text {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  .name-email-link:hover .hover-text {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, 0);
+  }
+
+  .name-email-link .hover-text {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    pointer-events: none;
+  }
+</style>
+
 <footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
-  <div class="container-fluid">
-    <div class="ms-auto">
-      <ul class="navbar-nav mb-2 mb-lg-0">
-        <!-- <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small> -->
-      </ul>
-    </div>
+  <div class="container-fluid justify-content-center">
+    <span class="navbar-text">
+      <small>
+        <a href="{% capture url %}mailto:{{ site.data.bio.basics.email }}{% endcapture %}{{ url }}"
+          class="text-decoration-none link-secondary name-email-link">
+          <span class="default-text">{{ site.data.bio.basics.name }} &copy; {{ site.time | date: '%Y' }}.</span>
+          <span class="hover-text">Let's Connect: {{ site.data.bio.basics.email }}</span>
+        </a>
+      </small>
+    </span>
   </div>
 </footer>

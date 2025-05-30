@@ -7,29 +7,78 @@
     "email": "magiza2000@gmail.com",
     "phone": "+201015980581",
     "website": "https://muhammadagiza.github.io",
-    "summary": "Backend Software Engineer with an Electronics & Communication Engineering background, skilled in Node.js and REST API development. Passionate about problem-solving and technology.",
-    "full_summary": "Electronics & Communication Engineering graduate with demonstrated experience as a Backend Software Engineer. Proficient in designing and developing robust REST APIs with Node.js, integrating databases like MySQL and Firebase, and applying SOLID principles within Agile environments. Passionate about leveraging technology to build scalable SaaS solutions and solve complex challenges.",
-    "location": { "address": "", "postalCode": "", "city": "El Mansoura", "countryCode": "Egypt", "region": "Al Daqahliyah" },
+    "summary": "Backend Software Engineer with an Electronics & Communication Engineering background, skilled in REST API development and backend systems. Passionate about problem-solving and technology.",
+    "full_summary": "Electronics & Communication Engineering graduate with demonstrated experience as a Backend Software Engineer. Proficient in designing and developing robust REST APIs, integrating various database solutions, and applying SOLID principles within Agile environments. Passionate about leveraging technology to build scalable SaaS solutions and solve complex challenges.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "El Mansoura",
+      "countryCode": "Egypt",
+      "region": "Al Daqahliyah"
+    },
     "profiles": [
-      { "network": "github", "username": "muhammadagiza", "url": "http://github.com/muhammadagiza" },
-      { "network": "linkedin", "username": "muhammadagiza", "url": "http://linkedin.com/in/muhammadagiza" },
-      { "network": "twitter", "username": "muhammadagiza", "url": "http://twitter.com/muhammadagiza" },
-      { "network": "instagram", "username": "muhammad_3giza", "url": "http://instagram.com/muhammad_3giza" }
+      {
+        "network": "github",
+        "username": "muhammadagiza",
+        "url": "http://github.com/muhammadagiza"
+      },
+      {
+        "network": "linkedin",
+        "username": "muhammadagiza",
+        "url": "http://linkedin.com/in/muhammadagiza"
+      },
+      {
+        "network": "twitter",
+        "username": "muhammadagiza",
+        "url": "http://twitter.com/muhammadagiza"
+      },
+      {
+        "network": "instagram",
+        "username": "muhammad_3giza",
+        "url": "http://instagram.com/muhammad_3giza"
+      }
     ]
   },
   "interests": [
-    { "name": "Software" },
-    { "name": "Databases" },
-    { "name": "Backend Development" }
+    {
+      "name": "Software"
+    },
+    {
+      "name": "Databases"
+    },
+    {
+      "name": "Backend Development"
+    }
   ],
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C#", "C", "Python", "PHP", "Javascript", "Typescript", "Nodejs", "Laravel", "Arduino", "MySQL" ]
+      "keywords": [
+        "C#",
+        "C",
+        "Python",
+        "PHP",
+        "Javascript",
+        "Typescript",
+        "Nodejs",
+        "Laravel",
+        "Filament",
+        "Arduino",
+        "MySQL",
+        "Firebase"
+      ]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "MacOS", "Windows", "Ubuntu", "Git/GitHub", "Microsoft Office", "VS Code" ]
+      "keywords": [
+        "MacOS",
+        "Windows",
+        "Ubuntu",
+        "Git/GitHub",
+        "Microsoft Office",
+        "VS Code",
+        "Figma"
+      ]
     }
   ],
   "education": [
@@ -39,10 +88,10 @@
       "website": "https://mca.edu.eg",
       "studyType": "Bachelor's degree",
       "location": "El Mansoura, Egypt",
-      "startDate": "2018",
-      "endDate": "2023",
+      "startDate": "September 2018",
+      "endDate": "July 2023",
       "gpa": "3.74",
-      "classRanking": "5th of the class", 
+      "classRanking": "5th of the class",
       "honor": true,
       "courses": [
         "Built a strong foundation in electrical engineering principles, digital systems, and communications.",

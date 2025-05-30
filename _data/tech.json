@@ -1,73 +1,76 @@
 {
     "technologies": [
         {
-            "name" : "Node.js",
-            "icon" : "img/technology/node-js.svg"
+            "name": "Node.js",
+            "icon": "img/technology/node-js.svg"
         },
         {
-            "name" : "Express.js",
-            "icon" : "img/technology/express.svg"
+            "name": "Express.js",
+            "icon": "img/technology/express.svg"
         },
         {
-            "name" : "Prisma",
-            "icon" : "img/technology/prisma.svg"
+            "name": "Prisma",
+            "icon": "img/technology/prisma.svg"
         },
         {
-            "name" : "Javascript",
-            "icon" : "img/technology/javascript.svg"
+            "name": "Javascript",
+            "icon": "img/technology/javascript.svg"
         },
         {
-            "name" : "Typescript",
-            "icon" : "img/technology/typescript.svg"
+            "name": "Typescript",
+            "icon": "img/technology/typescript.svg"
         },
         {
-            "name" : "Git",
-            "icon" : "img/technology/git.svg"
+            "name": "Git",
+            "icon": "img/technology/git.svg"
         },
         {
-            "name" : "Laravel",
-            "icon" : "img/technology/laravel.svg"
+            "name": "Laravel",
+            "icon": "img/technology/laravel.svg"
         },
         {
-            "name" : "Filament",
-            "icon" : "img/technology/filamentphp.svg"
+            "name": "Filament",
+            "icon": "img/technology/filamentphp.svg"
         },
         {
-            "name" : "PHP",
-            "icon" : "img/technology/php.svg"
+            "name": "PHP",
+            "icon": "img/technology/php.svg"
         },
         {
-            "name" : "MySql",
-            "icon" : "img/technology/mysql.svg"
+            "name": "MySql",
+            "icon": "img/technology/mysql.svg"
         },
         {
-            "name" : "Firebase",
-            "icon" : "img/technology/firebase.svg"
+            "name": "Firebase",
+            "icon": "img/technology/firebase.svg"
         },
         {
-            "name" : "cPanel",
-            "icon" : "img/technology/cpanel.svg"
+            "name": "cPanel",
+            "icon": "img/technology/cpanel.svg"
         },
         {
-            "name" : "Arduino",
-            "icon" : "img/technology/arduino.svg"
+            "name": "Arduino",
+            "icon": "img/technology/arduino.svg"
         },
         {
-            "name" : "C#",
-            "icon" : "img/technology/c-sharp.svg"
+            "name": "C#",
+            "icon": "img/technology/c-sharp.svg"
         },
         {
-            "name" : "Linux",
-            "icon" : "img/technology/linux.svg"
+            "name": "Linux",
+            "icon": "img/technology/linux.svg"
         },
         {
-            "name" : "Postman",
-            "icon" : "img/technology/postman.svg"
+            "name": "Postman",
+            "icon": "img/technology/postman.svg"
         },
         {
-            "name" : "Jira",
-            "icon" : "img/technology/jira.svg"
+            "name": "Jira",
+            "icon": "img/technology/jira.svg"
+        },
+        {
+            "name": "Figma",
+            "icon": "img/technology/figma.svg"
         }
-
     ]
 }

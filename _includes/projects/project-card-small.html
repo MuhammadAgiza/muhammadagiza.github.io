@@ -12,9 +12,8 @@
         <small class="text-muted d-block mb-2">{{ include.page.date }}</small>
         {% endif %}
         <div class="mt-auto pt-2">
-            {% for label in include.page.labels %}
-            <span style="background-color: var(--tf-pill-bg)" class="badge rounded-pill small me-1 mb-1">{{ label
-                }}</span>
+            {% for label_text in include.page.labels %}
+            {% include projects/project-keyword.html text=label_text %}
             {% endfor %}
         </div>
         <a href="{{ site.baseurl }}{{ include.page.url }}" class="stretched-link"
