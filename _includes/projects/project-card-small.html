@@ -1,4 +1,4 @@
-<div class="card h-100 shadow-sm">
+<div class="card h-100 shadow-sm position-relative">
     {% if include.page.thumbnail %}
     <img src="{{ site.baseurl }}/{{ include.page.thumbnail }}" class="card-img-top"
         alt="{{ include.page.title | escape }} thumbnail" style="height: 150px; object-fit: contain;">
@@ -7,7 +7,9 @@
         style="height: 150px; object-fit: contain;">
     {% endif %}
     <div class="card-body d-flex flex-column">
-        <h6 class="card-title">{{ include.page.title }}</h6>
+        <h6 class="card-title">
+            {{ include.page.title }}
+        </h6>
         {% if include.page.date %}
         <small class="text-muted d-block mb-2">{{ include.page.date }}</small>
         {% endif %}

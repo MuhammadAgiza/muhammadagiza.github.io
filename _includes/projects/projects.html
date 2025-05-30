@@ -7,10 +7,11 @@
         <h1 class="display-4 text-start">
           Projects
           {% if keyword and keyword != "" %}
-          <span class="badge bg-dark fw-normal fs-6 align-middle">
+          <span class="badge bg-white text-dark border border-dark fw-normal fs-6 align-middle">
             {{ keyword }}
-            <a href="{{ site.baseurl }}/projects/" class="text-light ms-1"
-              style="text-decoration: none; font-size: 0.75em; vertical-align: middle;"
+            <a href="{{ site.baseurl }}/projects/"
+               class="ms-1"
+               style="text-decoration: none; font-size: 0.75em; vertical-align: middle; color: inherit;"
               title="Clear filter: {{ keyword }}" aria-label="Clear filter for keyword: {{ keyword }}">
               {% include icon.html name="x" %}
             </a>
