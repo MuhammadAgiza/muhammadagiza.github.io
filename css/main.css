@@ -1,0 +1,115 @@
+/* Styles extracted from HTML files */
+
+
+
+
+/* From _includes/about/about.html */
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    15% {
+        transform: rotate(14deg);
+    }
+
+    30% {
+        transform: rotate(-8deg);
+    }
+
+    45% {
+        transform: rotate(14deg);
+    }
+
+    60% {
+        transform: rotate(-4deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.wave-emoji {
+    display: inline-block;
+    /* Allows transform */
+    transform-origin: 70% 70%;
+    /* Pivot point for the wave */
+}
+
+h1:hover .wave-emoji {
+    animation: wave 2s infinite;
+    /* Apply the animation on h1 hover */
+}
+
+
+/* From _includes/footer.html */
+.name-email-link {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.name-email-link .default-text,
+.name-email-link .hover-text {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.name-email-link .default-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.name-email-link:hover .default-text {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.name-email-link:hover .hover-text {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, 0);
+}
+
+.name-email-link .hover-text {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    pointer-events: none;
+}
+
+/* From _includes/technology/technology-section.html */
+.infinite-scroll {
+    display: flex;
+    overflow-x: auto;
+    position: relative;
+    white-space: nowrap;
+    scrollbar-width: none;
+}
+
+.infinite-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* From _includes/projects/project-keyword.html */
+.project-keyword-display-pill {
+    background-color: var(--tf-pill-bg, #f0f0f0);
+    transition: background-color 0.15s ease-in-out, transform 0.15s ease-in-out, filter 0.15s ease-in-out;
+    display: inline-block;
+}
+
+.project-keyword-action-link:hover .project-keyword-display-pill {
+    background-color: var(--tf-pill-bg-hover, var(--tf-pill-bg, #f0f0f0));
+    filter: brightness(95%) drop-shadow(0 2px 3px rgba(0, 0, 0, 0.12));
+    transform: scale(1.05) translateY(-1px);
+}

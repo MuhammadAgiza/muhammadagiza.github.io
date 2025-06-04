@@ -1,21 +1,4 @@
-<a href="{{ site.baseurl }}/projects/keyword/{{ include.text | uri_escape }}/"
-   class="project-keyword-action-link"
-   style="position: relative; z-index: 2; text-decoration: none;">
+<a href="{{ site.baseurl }}/projects/keyword/{{ include.text | uri_escape }}/" class="project-keyword-action-link"
+    style="position: relative; z-index: 2; text-decoration: none;">
     <span class="project-keyword-display-pill badge rounded-pill me-1 mb-1">{{ include.text }}</span>
 </a>
-
-<style>
-.project-keyword-display-pill {
-    background-color: var(--tf-pill-bg, #f0f0f0); /* Fallback color if --tf-pill-bg is not set */
-    /* color: var(--tf-pill-text-color, inherit); */ /* Uncomment and set if you have specific text color */
-    transition: background-color 0.15s ease-in-out, transform 0.15s ease-in-out, filter 0.15s ease-in-out;
-    display: inline-block; /* Ensures transforms apply correctly */
-}
-
-.project-keyword-action-link:hover .project-keyword-display-pill {
-    background-color: var(--tf-pill-bg-hover, var(--tf-pill-bg, #f0f0f0)); /* Uses hover variable, falls back to default, then to a hardcoded value */
-    filter: brightness(95%) drop-shadow(0 2px 3px rgba(0,0,0,0.12)); /* Slightly adjust brightness and add a subtle shadow. If --tf-pill-bg-hover is your final desired color, you might remove brightness(). */
-    transform: scale(1.05) translateY(-1px); /* Makes the pill pop and lift slightly */
-    /* color: var(--tf-pill-text-hover-color, inherit); */ /* Optional: change text color on hover */
-}
-</style>
