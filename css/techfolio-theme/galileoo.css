@@ -1,16 +1,18 @@
-/* Default theme. Simple, yet elegant. */
+/* Galileo Theme: A clean and professional theme with indigo accents. */
 
 /* Use Open Sans as the default sans serif font. */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700|Source+Code+Pro:300,400,500,700");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 /* See https://getbootstrap.com/docs/5.2/customize/css-variables/#root-variables for variables to override. */
 :root {
-  --bs-font-sans-serif: "Roboto", "Open Sans", sans-serif;
+  --galileo-accent1: #0D47A1; /* Deep Blue */
+  --galileo-accent2: #1976D2; /* Brighter Blue for hover */
+  --bs-font-sans-serif: "Lato", "Open Sans", sans-serif;
   --bs-link-color: var(--bs-blue);
   --tf-pill-bg: var(--bs-gray);
-  --tf-icon-fill: var(--bs-gray);
-  --tf-icon-hover: var(--bs-gray-500);
+  --tf-icon-fill: var(--galileo-accent1);
+  --tf-icon-hover: var(--galileo-accent2);
   --tf-page-bg-color: var(--bs-white);
   --tf-footer-bg-color: var(--bs-gray-200);
   --tf-projects-bg-color: var(--bs-gray-100);
@@ -23,7 +25,7 @@
   height: 1.5em;
   vertical-align: -.1em;
   width: 1.5em;
-  transition: 0.2s;
+  transition: fill 0.2s;
 }
 
 .tf-social:hover {
@@ -32,6 +34,22 @@
 
 a {
   text-decoration: none;
+}
+
+/* Navigation Links */
+.nav-link {
+  color: var(--bs-gray-700); /* Neutral dark gray for default state */
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--galileo-accent2); /* Brighter blue on hover/focus */
+}
+
+.nav-link.active {
+  color: var(--galileo-accent1); /* Deep blue for active links */
+  font-weight: 500; /* Slightly bolder for active links */
 }
 
 /* @media (max-width: 500px) {

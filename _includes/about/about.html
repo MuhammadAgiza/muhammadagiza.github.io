@@ -5,9 +5,12 @@
         <img width="300px" src="{{ site.data.bio.basics.picture }}" class="d-block mx-auto rounded-circle">
       </div>
       <div class="col-lg-8">
-        <h1 class="display-4 text-center">{{ site.data.bio.basics.name }} <span class="wave-emoji">👋</span></h1>
-        <p class="lead text-center">{{ site.data.bio.basics.label }}</p>
-        <p class="lead text-center">{{ site.data.bio.basics.full_summary }}</p>
+        <h1 class="display-4 text-left">
+          <span style="display: block; font-size: 0.5em; color: var(--tf-muted-text-color, #6c757d); line-height: 1.2; margin-bottom: 0.05em;">Hi <span class="wave-emoji">👋</span>, I'm</span>
+          <span style="display: block; font-weight: bold; letter-spacing: -0.015em; color: var(--tf-heading-color, var(--tf-text-color, inherit));" class="hero-name-intro">{{ site.data.bio.basics.name }}</span>
+        </h1>
+        <p class="lead text-left" style="opacity: 0.85; font-style: italic;">{{ site.data.bio.basics.label }}</p>
+        <p class="lead text-left">{{ site.data.bio.basics.full_summary }}</p>
         <!-- <hr class="my-4">
         <p class="lead m-0">
           Interests:

@@ -1,8 +1,3 @@
-/* Styles extracted from HTML files */
-
-
-
-
 /* From _includes/about/about.html */
 
 @keyframes wave {
@@ -40,13 +35,14 @@
     /* Allows transform */
     transform-origin: 70% 70%;
     /* Pivot point for the wave */
+    animation: wave 2s infinite;
 }
 
+/*
 h1:hover .wave-emoji {
     animation: wave 2s infinite;
-    /* Apply the animation on h1 hover */
-}
-
+    }
+*/
 
 /* From _includes/footer.html */
 .name-email-link {
@@ -92,6 +88,8 @@ h1:hover .wave-emoji {
 .infinite-scroll {
     display: flex;
     overflow-x: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
     position: relative;
     white-space: nowrap;
     scrollbar-width: none;
@@ -112,4 +110,42 @@ h1:hover .wave-emoji {
     background-color: var(--tf-pill-bg-hover, var(--tf-pill-bg, #f0f0f0));
     filter: brightness(95%) drop-shadow(0 2px 3px rgba(0, 0, 0, 0.12));
     transform: scale(1.05) translateY(-1px);
+}
+
+
+.tech-item {
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.tech-item:hover {
+    transform: scale(1.3);
+    /* Scale up by 20% on hover */
+    z-index: 10;
+}
+
+
+.scroll-container-wrapper{
+    position: relative;
+    overflow-x: hidden;
+}
+
+.scroll-fade-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 75px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.scroll-fade-overlay.fade-left {
+    left: 0;
+    background: linear-gradient(to right, white, rgba(255, 255, 255, 0));
+
+}
+
+.scroll-fade-overlay.fade-right {
+    right: 0;
+    background: linear-gradient(to left, white, rgba(255, 255, 255, 0));
 }
