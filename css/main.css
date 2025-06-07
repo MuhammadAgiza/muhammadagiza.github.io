@@ -1,3 +1,47 @@
+:root {
+    --theme-nav-link: #90a4ae;
+    --theme-nav-link-hover: #cfd8dc;
+    --theme-nav-link-active: #ffffff;
+    --theme-muted-text-color: #6c757d;
+    --theme-heading-color: #b3cfff;
+    --theme-text-color: #e0e6f0;
+    --theme-footer-bg-color: #000;
+    --theme-projects-bg-color: #000;
+    --theme-changelog-bg-color: #000;
+    --theme-page-bg-color: #000;
+    --theme-pill-bg: #7f5fff;
+    --theme-pill-text: #fff;
+    --theme-pill-bg-hover: #6c63ff;
+    --theme-icon-fill: #00eaff;
+    --theme-icon-hover: #ff61a6;
+    --theme-warning-bg: #2d2633;
+    --theme-warning-color: #ffe082;
+    --theme-warning-border: #7f5fff;
+    --theme-warning-link: #ffd54f;
+    --theme-warning-link-hover: #ff61a6;
+    --theme-badge-bg: #181a1b;
+    --theme-badge-border: #23263a;
+    --theme-badge-text: #e0e6f0;
+    --theme-badge-link: #ff61a6;
+    --theme-badge-link-hover: #00eaff;
+    --theme-card-footer-border: #23263a;
+    --theme-white: #fff;
+    --theme-black: #000;
+    --theme-light: #f0f0f0;
+    --theme-dark: #23263a;
+    --theme-transparent: rgba(255, 255, 255, 0);
+    --theme-shadow: rgba(127, 95, 255, 0.08);
+    --theme-shadow-strong: rgba(127, 95, 255, 0.10);
+    --theme-shadow-footer: rgba(127, 95, 255, 0.08);
+    --theme-shadow-card: rgba(127, 95, 255, 0.08);
+    --theme-shadow-card-strong: rgba(127, 95, 255, 0.10);
+}
+
+body {
+    background-color: var(--theme-page-bg-color);
+    color: var(--theme-text-color);
+}
+
 /* From _includes/about/about.html */
 
 @keyframes wave {
@@ -44,7 +88,6 @@ h1:hover .wave-emoji {
     }
 */
 
-/* From _includes/footer.html */
 .name-email-link {
     position: relative;
     display: inline-block;
@@ -101,13 +144,14 @@ h1:hover .wave-emoji {
 
 /* From _includes/projects/project-keyword.html */
 .project-keyword-display-pill {
-    background-color: var(--tf-pill-bg, #f0f0f0);
+    background-color: var(--theme-pill-bg);
+    color: var(--theme-pill-text);
     transition: background-color 0.15s ease-in-out, transform 0.15s ease-in-out, filter 0.15s ease-in-out;
     display: inline-block;
 }
 
 .project-keyword-action-link:hover .project-keyword-display-pill {
-    background-color: var(--tf-pill-bg-hover, var(--tf-pill-bg, #f0f0f0));
+    background-color: var(--theme-pill-bg-hover, var(--theme-pill-bg, #f0f0f0));
     filter: brightness(95%) drop-shadow(0 2px 3px rgba(0, 0, 0, 0.12));
     transform: scale(1.05) translateY(-1px);
 }
@@ -125,7 +169,7 @@ h1:hover .wave-emoji {
 }
 
 
-.scroll-container-wrapper{
+.scroll-container-wrapper {
     position: relative;
     overflow-x: hidden;
 }
@@ -141,11 +185,214 @@ h1:hover .wave-emoji {
 
 .scroll-fade-overlay.fade-left {
     left: 0;
-    background: linear-gradient(to right, white, rgba(255, 255, 255, 0));
+    background: linear-gradient(to right, var(--theme-page-bg-color), var(--theme-transparent));
 
 }
 
 .scroll-fade-overlay.fade-right {
     right: 0;
-    background: linear-gradient(to left, white, rgba(255, 255, 255, 0));
+    background: linear-gradient(to left, var(--theme-page-bg-color), var(--theme-transparent));
+}
+
+.technology-section {
+    background-color: var(--theme-page-bg-color);
+}
+
+/* Site Header */
+.site-header {
+    background-color: var(--theme-page-bg-color);
+    /* Using your defined page background color */
+    box-shadow: 0 0.125rem 0.25rem var(--theme-shadow);
+    /* Using your defined shadow */
+}
+
+.site-header .navbar-brand {
+    color: var(--theme-nav-link-active);
+    /* Brightest color for the brand */
+}
+
+.site-header .navbar-brand:hover,
+.site-header .navbar-brand:focus {
+    color: var(--theme-nav-link-hover);
+}
+
+.site-header .nav-link {
+    color: var(--theme-nav-link);
+}
+
+.site-header .nav-link:hover,
+.site-header .nav-link:focus {
+    color: var(--theme-nav-link-hover);
+}
+
+.site-header .nav-item.active .nav-link,
+.site-header .nav-link.active {
+    color: var(--theme-nav-link-active);
+}
+
+/* Site Footer */
+.site-footer {
+    background-color: var(--theme-footer-bg-color);
+    color: var(--theme-text-color);
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 -0.125rem 0.25rem var(--theme-shadow-footer);
+    border-top: 1px solid var(--theme-card-footer-border);
+}
+
+
+.site-footer a.name-email-link {
+    color: var(--theme-nav-link);
+    text-decoration: none;
+}
+
+.site-footer a.name-email-link:hover,
+.site-footer a.name-email-link:focus {
+    color: var(--theme-nav-link-hover);
+    text-decoration: none;
+}
+
+/* Project Page Styles */
+.project-page-container {
+    background-color: var(--theme-page-bg-color);
+    color: var(--theme-text-color);
+}
+
+.project-page-header .project-page-title {
+    color: var(--theme-heading-color);
+}
+
+.project-page-back-button {
+    color: var(--theme-muted-text-color);
+    text-decoration: none;
+}
+
+.project-page-back-button:hover,
+.project-page-back-button:focus {
+    color: var(--theme-nav-link-hover);
+    text-decoration: none;
+}
+
+.project-page-back-button svg {
+    fill: currentColor;
+    /* Icon color will match the text color */
+}
+
+.project-page-date-badge {
+    background-color: var(--theme-badge-bg);
+    color: var(--theme-badge-text);
+    border: 1px solid var(--theme-badge-border);
+}
+
+.project-page-divider {
+    border-top-color: var(--theme-card-footer-border);
+    opacity: 1;
+    /* Override Bootstrap's default opacity for hr if needed */
+}
+
+.project-page-content-area {
+    background-color: var(--theme-dark);
+    color: var(--theme-text-color);
+    box-shadow: 0 .125rem .25rem var(--theme-shadow-card);
+    /* Themed shadow */
+    border-radius: .25rem;
+    /* Bootstrap's default rounded value */
+}
+
+.project-page-navigation-footer {
+    border-top: 1px solid var(--theme-card-footer-border);
+}
+
+/* Project Card Component Styles */
+.project-card {
+    background-color: var(--theme-dark);
+    /* Consistent background with project page content */
+    color: var(--theme-text-color);
+    /* Consistent text color */
+    border: 1px solid var(--theme-card-footer-border);
+    /* Consistent border */
+    box-shadow: 0 .125rem .25rem var(--theme-shadow-card);
+    /* Use theme shadow */
+    /* Retain h-100 from Bootstrap utility classes in HTML where needed */
+}
+
+.project-card-img {
+    object-fit: contain;
+    /* A background for the image area, especially with 'contain', can improve appearance */
+    background-color: var(--theme-transparent);
+    /* Or transparent if preferred */
+}
+
+.project-card-img-large {
+    height: 225px;
+}
+
+.project-card-img-small {
+    height: 150px;
+}
+
+/* Applied to h5 or h6 elements that also have Bootstrap's .card-title */
+.project-card-title {
+    color: var(--theme-heading-color);
+    /* Use theme's heading color */
+}
+
+/* Applied to small elements for dates */
+.project-card-date {
+    color: var(--theme-muted-text-color) !important;
+    /* Ensure it uses theme's muted color */
+}
+
+/* Applied to p elements that also have Bootstrap's .card-text for summary */
+.project-card-summary {
+    /* Inherits text color from .project-card. Specific styling can be added here if needed. */
+}
+
+/* Container for project keywords/labels */
+.project-card-labels-container {
+    /* Specific styling can be added here if needed. */
+}
+
+/* Container for card actions (buttons) */
+.project-card-actions-container {
+    /* Specific styling can be added here if needed. */
+}
+
+.project-card-button {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid var(--theme-heading-color);
+    /* Changed from --theme-dark */
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    color: var(--theme-heading-color);
+    /* Changed from --theme-dark */
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.project-card-button:hover {
+    color: var(--theme-dark);
+    /* Changed from --theme-white for better contrast on heading-color background */
+    background-color: var(--theme-heading-color);
+    /* Changed from --theme-dark */
+    border-color: var(--theme-heading-color);
+    /* Changed from --theme-dark */
+}
+
+/* Resume Page Styles */
+.resume-interest-badge,
+.resume-skill-badge {
+    background-color: var(--theme-pill-bg);
+    color: var(--theme-pill-text);;
+    /* Ensuring good contrast against the pill background */
+    border: 1px solid var(--theme-pill-bg-hover);
+    /* Using a slightly different shade for the border */
 }

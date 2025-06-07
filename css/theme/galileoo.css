@@ -1,0 +1,126 @@
+/* Galileo Theme: A clean and professional theme with indigo accents. */
+
+/* Use Open Sans as the default sans serif font. */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700|Source+Code+Pro:300,400,500,700");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/* See https://getbootstrap.com/docs/5.2/customize/css-variables/#root-variables for variables to override. */
+:root {
+  /* Galileo Theme Accents */
+  --galileo-accent1: #0D47A1;
+  /* Deep Blue */
+  --galileo-accent2: #1976D2;
+  /* Brighter Blue for hover */
+
+  /* Base Font & Link Color */
+  --bs-font-sans-serif: "Lato", "Open Sans", sans-serif;
+  --bs-link-color: var(--galileo-accent1);
+
+  /* Theme Variables from main.css for a White Theme */
+  /* Navigation */
+  --theme-nav-link: var(--bs-gray-700);
+  --theme-nav-link-hover: var(--galileo-accent2);
+  --theme-nav-link-active: var(--bs-dark);
+
+  /* Text */
+  --theme-muted-text-color: var(--bs-gray-600);
+  --theme-heading-color: var(--bs-dark);
+  --theme-text-color: var(--bs-dark);
+
+  /* Backgrounds */
+  --theme-page-bg-color: var(--bs-white);
+  --theme-footer-bg-color: var(--bs-gray-100);
+  --theme-projects-bg-color: var(--bs-white);
+  --theme-changelog-bg-color: var(--bs-white);
+
+  /* UI Elements: Pills, Icons */
+  --theme-pill-bg: var(--bs-gray-200);
+  --theme-pill-bg-hover: var(--bs-gray-300);
+  --theme-pill-text: var(--bs-dark);
+  --theme-icon-fill: var(--galileo-accent1);
+  --theme-icon-hover: var(--galileo-accent2);
+
+  /* Warnings */
+  --theme-warning-bg: rgba(13, 71, 161, 0.1); /* Light blue from accent */
+  --theme-warning-color: var(--bs-dark);
+  --theme-warning-border: var(--galileo-accent1);
+  --theme-warning-link: var(--galileo-accent2);
+  --theme-warning-link-hover: var(--galileo-accent1);
+
+  /* Badges */
+  --theme-badge-bg: var(--bs-gray-100);
+  --theme-badge-border: var(--bs-gray-300);
+  --theme-badge-text: var(--bs-dark);
+  --theme-badge-link: var(--galileo-accent1);
+  --theme-badge-link-hover: var(--galileo-accent2);
+
+  /* Borders & Generic Colors */
+  --theme-card-footer-border: var(--bs-gray-300);
+  --theme-white: var(--bs-white);
+  --theme-black: var(--bs-dark); /* Using Bootstrap's dark for "black" */
+  --theme-light: var(--bs-gray-100); /* Bootstrap's light */
+  /* --theme-dark is used for backgrounds in main.css (e.g. cards), so set to white for a white theme. */
+  /* For text on colored backgrounds (e.g. button hover), this will result in white text. */
+  --theme-dark: var(--bs-white);
+  --theme-transparent: transparent;
+
+  /* Shadows */
+  --theme-shadow: rgba(0, 0, 0, 0.075);
+  --theme-shadow-strong: rgba(0, 0, 0, 0.125);
+  --theme-shadow-footer: rgba(0, 0, 0, 0.075);
+  --theme-shadow-card: rgba(0, 0, 0, 0.075);
+  --theme-shadow-card-strong: rgba(0, 0, 0, 0.125);
+}
+
+/* Format social media icons */
+.tf-social {
+  display: inline-block;
+  color: var(--theme-icon-fill);
+  vertical-align: -.1em;
+  transition: fill 0.2s;
+  font-size: 1.5em;
+}
+
+.tf-social:hover {
+  color: var(--theme-icon-hover);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navigation Links */
+.nav-link {
+  color: var(--bs-gray-700);
+  /* Neutral dark gray for default state */
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--galileo-accent2);
+  /* Brighter blue on hover/focus */
+}
+
+.nav-link.active {
+  color: var(--galileo-accent1);
+  /* Deep blue for active links */
+  font-weight: 500;
+  /* Slightly bolder for active links */
+}
+
+/* @media (max-width: 500px) {
+  .navbar-brand {
+    display: none;
+  }
+
+  .navbar-brand-mobile {
+    display: inline;
+  }
+} */
+
+/* Simplify the styling of the bottom of Essay cards. */
+.card-footer {
+  background-color: var(--bs-white);
+  border-top: none;
+}

@@ -1,28 +1,27 @@
 ---
 layout: home
 ---
-
-<div class="container py-4">
-  <div class="d-flex justify-content-between align-items-center mb-3">
+<div class="container py-4 project-page-container">
+  <div class="d-flex justify-content-between align-items-center mb-3 project-page-header">
     <div class="d-flex align-items-center">
-      <a href="/projects/" class="btn btn-sm btn-link text-secondary text-decoration-none me-3 ps-0" aria-label="Back to Projects" title="Back to Projects">
+      <a href="/projects/" class="btn btn-sm btn-link me-3 ps-0 project-page-back-button" aria-label="Back to Projects" title="Back to Projects">
         {% include icon.html name="arrow-left" %}
       </a>
-      <h1 class="display-5 mb-0">{{ page.title }}</h1>
+      <h1 class="display-5 mb-0 project-page-title">{{ page.title }}</h1>
     </div>
     {% if page.date %}
-      <span class="badge bg-light text-dark fw-normal p-2">{{ page.date }}</span>
+      <span class="badge fw-normal p-2 project-page-date-badge">{{ page.date }}</span>
     {% endif %}
   </div>
 
-  <hr class="my-4">
+  <hr class="my-4 project-page-divider">
 
-  <div class="bg-light p-4 p-md-5 rounded shadow-sm mb-4">
+  <div class="p-4 p-md-5 rounded mb-4 project-page-content-area">
     {{ content }}
   </div>
 
   
-  <div class="project-navigation-footer pt-4 mt-4 border-top">
+  <div class="project-navigation-footer pt-4 mt-4 project-page-navigation-footer">
     {% include projects/project-navigation.html %}
   </div>
 </div>

@@ -1,13 +1,11 @@
-<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
-  <div class="container-fluid justify-content-center">
-    <span class="navbar-text">
-      <small>
-        <a href="{% capture url %}mailto:{{ site.data.bio.basics.email }}{% endcapture %}{{ url }}"
-          class="text-decoration-none link-secondary name-email-link">
-          <span class="default-text">{{ site.data.bio.basics.name }} &copy; {{ site.time | date: '%Y' }}.</span>
-          <span class="hover-text">Let's Connect: {{ site.data.bio.basics.email }}</span>
-        </a>
-      </small>
-    </span>
+<footer class="site-footer">
+  <div class="container-fluid">
+    <small>
+      <a href="{% capture url %}mailto:{{ site.data.bio.basics.email }}{% endcapture %}{{ url }}"
+        class="name-email-link">
+        <span class="default-text">{{ site.data.bio.basics.name }} &copy; {{ site.time | date: '%Y' }}.</span>
+        <span class="hover-text">Let's Connect: {{ site.data.bio.basics.email }}</span>
+      </a>
+    </small>
   </div>
 </footer>
