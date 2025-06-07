@@ -31,6 +31,7 @@
   --theme-page-bg-color: var(--bs-white);
   --theme-footer-bg-color: var(--bs-gray-100);
   --theme-projects-bg-color: var(--bs-white);
+  --theme-projects-grid-bg-color: var(--bs-gray-100); 
   --theme-changelog-bg-color: var(--bs-white);
 
   /* UI Elements: Pills, Icons */
@@ -41,9 +42,9 @@
   --theme-icon-hover: var(--galileo-accent2);
 
   /* Warnings */
-  --theme-warning-bg: rgba(13, 71, 161, 0.1); /* Light blue from accent */
-  --theme-warning-color: var(--bs-dark);
-  --theme-warning-border: var(--galileo-accent1);
+  --theme-warning-bg: #fff3cd;
+  --theme-warning-color: #664d03;
+  --theme-warning-border: #ffecb5;
   --theme-warning-link: var(--galileo-accent2);
   --theme-warning-link-hover: var(--galileo-accent1);
 
@@ -57,8 +58,10 @@
   /* Borders & Generic Colors */
   --theme-card-footer-border: var(--bs-gray-300);
   --theme-white: var(--bs-white);
-  --theme-black: var(--bs-dark); /* Using Bootstrap's dark for "black" */
-  --theme-light: var(--bs-gray-100); /* Bootstrap's light */
+  --theme-black: var(--bs-dark);
+  /* Using Bootstrap's dark for "black" */
+  --theme-light: var(--bs-gray-100);
+  /* Bootstrap's light */
   /* --theme-dark is used for backgrounds in main.css (e.g. cards), so set to white for a white theme. */
   /* For text on colored backgrounds (e.g. button hover), this will result in white text. */
   --theme-dark: var(--bs-white);

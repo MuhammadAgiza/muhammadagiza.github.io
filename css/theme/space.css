@@ -1,0 +1,425 @@
+/* Space Theme: A dark theme with bright, futuristic accents. */
+
+/* Font Imports */
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;700&display=swap"); /* Cooler, futuristic font */
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500,700");
+
+:root {
+    /* Space Theme Specific Accents */
+    --space-black: #000000;
+    --space-deep-cosmos: #080815;
+    /* Very dark blue/purple for card backgrounds etc. */
+    --space-star-white: #FFFFFF;
+    --space-light-gray: #e0e6f0;
+    /* Bright default text */
+    --space-muted-gray: #808099;
+    /* A bit brighter muted text for dark backgrounds */
+
+    --space-hyperdrive-cyan: #00eaff;
+    --space-nebula-pink: #ff61a6;
+    --space-nebula-purple: #7f5fff;
+    --space-alert-yellow: #ffe082;
+
+    /* RGB versions for gradients with alpha */
+    --space-hyperdrive-cyan-rgb: 0, 234, 255;
+    --space-nebula-purple-rgb: 127, 95, 255;
+    --space-deep-cosmos-rgb: 8, 8, 21;
+    --space-star-white-rgb: 255, 255, 255;
+    --space-nebula-pink-rgb: 255, 97, 166; /* Added for accretion disk consistency */
+
+    /* Base Font & Link Color */
+    --bs-font-sans-serif: "Exo 2", "Open Sans", sans-serif; /* Using Exo 2 as the primary cool font */
+    --bs-link-color: var(--space-hyperdrive-cyan);
+
+    /* Navigation */
+    --theme-nav-link: var(--space-light-gray);
+    --theme-nav-link-hover: var(--space-hyperdrive-cyan);
+    --theme-nav-link-active: var(--space-star-white);
+
+    /* Text */
+    --theme-muted-text-color: var(--space-muted-gray);
+    --theme-heading-color: var(--space-hyperdrive-cyan);
+    --theme-text-color: var(--space-light-gray);
+
+    /* Backgrounds */
+    --theme-page-bg-color: var(--space-black);
+    --theme-footer-bg-color: var(--space-black);
+    --theme-projects-bg-color: var(--space-black);
+    --theme-changelog-bg-color: var(--space-black);
+
+    /* UI Elements: Pills, Icons */
+    --theme-pill-bg: var(--space-nebula-purple);
+    --theme-pill-bg-hover: var(--space-hyperdrive-cyan);
+    --theme-pill-text: var(--space-star-white);
+    --theme-icon-fill: var(--space-hyperdrive-cyan);
+    --theme-icon-hover: var(--space-nebula-pink);
+
+    /* Warnings */
+    --theme-warning-bg: rgba(0, 234, 255, 0.1);
+    /* Light cyan glow background */
+    --theme-warning-color: var(--space-alert-yellow);
+    --theme-warning-border: var(--space-hyperdrive-cyan);
+    --theme-warning-link: var(--space-nebula-pink);
+    --theme-warning-link-hover: var(--space-hyperdrive-cyan);
+
+    /* Badges */
+    --theme-badge-bg: var(--space-deep-cosmos);
+    --theme-badge-border: var(--space-nebula-purple);
+    --theme-badge-text: var(--space-light-gray);
+    --theme-badge-link: var(--space-hyperdrive-cyan);
+    --theme-badge-link-hover: var(--space-nebula-pink);
+
+    /* Borders & Generic Colors */
+    --theme-card-footer-border: var(--space-nebula-purple);
+    --theme-white: var(--space-star-white);
+    --theme-black: var(--space-black);
+    --theme-light: #f0f0f0;
+    /* Standard light color, for elements that might need it */
+    --theme-dark: var(--space-deep-cosmos);
+    /* Used for card backgrounds, etc. */
+    --theme-transparent: transparent;
+
+    /* Shadows (more like glows on a dark theme) */
+    --theme-shadow: rgba(0, 234, 255, 0.12);
+    /* Cyan glow */
+    --theme-shadow-strong: rgba(0, 234, 255, 0.18);
+    --theme-shadow-footer: rgba(0, 234, 255, 0.12);
+    --theme-shadow-card: rgba(0, 234, 255, 0.12);
+    --theme-shadow-card-strong: rgba(0, 234, 255, 0.18);
+
+    /* Coolness Enhancements */
+    --theme-glow-subtle-cyan: 0 0 8px rgba(0, 234, 255, 0.3);
+    --theme-glow-pink-hover: 0 0 10px var(--space-nebula-pink);
+    --theme-glow-purple-hover: 0 0 12px var(--space-nebula-purple);
+}
+
+/* General Styles */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--theme-heading-color);
+    text-shadow: 0 0 5px rgba(0, 234, 255, 0.25);
+    /* Subtle cyan glow for headings */
+}
+
+a {
+    text-decoration: none;
+    /* Link color is primarily handled by --bs-link-color or specific component styles in main.css */
+}
+
+a:hover,
+a:focus {
+    color: var(--space-nebula-pink);
+    /* Change link hover to a different accent */
+    text-shadow: var(--theme-glow-pink-hover);
+    text-decoration: none;
+    /* Ensure no underline on hover if not desired */
+}
+
+/* Format social media icons (assuming SVGs, hence 'fill') */
+.tf-social {
+    display: inline-block;
+    fill: var(--theme-icon-fill);
+    height: 1.5em;
+    /* Consistent with other themes */
+    width: 1.5em;
+    /* Consistent with other themes */
+    vertical-align: -.1em;
+    transition: fill 0.2s ease-in-out;
+}
+
+.tf-social:hover {
+    fill: var(--theme-icon-hover);
+}
+
+/* Navbar brand visibility on small screens (common pattern from other themes) */
+@media (max-width: 500px) {
+    .navbar-brand {
+        display: none;
+    }
+
+    .navbar-brand-mobile {
+        display: inline;
+    }
+}
+
+/* 
+  Card Footer Styling:
+  Other themes often simplify card footers.
+  For this dark theme, we'll make the background transparent to inherit from the card's 
+  --theme-dark background and remove the top border for a cleaner look,
+  assuming main.css handles the overall card border.
+*/
+.card-footer {
+    background-color: transparent;
+    border-top: none;
+}
+
+/* Ensure .bg-gradient elements are solid black in Space theme */
+.bg-gradient {
+    background-image: none !important;
+    /* Remove any gradient image */
+    background-color: var(--space-black) !important;
+    /* Set background to space black */
+}
+
+/* --- Enhanced Interactivity & Effects --- */
+
+/* Styles for the technology section with a cosmic background */
+.technology-section {
+    background-color: var(--space-black); /* Base for the cosmic effect */
+    background-image: radial-gradient(
+        ellipse farthest-corner at 50% 50%, /* Centered effect */
+        rgba(var(--space-hyperdrive-cyan-rgb), 0.25) 0%, /* Cyan core glow */
+        rgba(var(--space-nebula-purple-rgb), 0.35) 30%, /* Purple mid-tones */
+        rgba(var(--space-deep-cosmos-rgb), 0.8) 60%, /* Blending into deep space */
+        var(--space-black) 85% /* Fading to black */
+    );
+    background-size: 150% 150%; /* Make the gradient larger than the element for a softer, expansive feel */
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 5rem 2rem; /* Generous padding to showcase the background */
+    position: relative; /* For z-indexing content */
+    overflow: hidden; /* Clip any overflowing gradient parts */
+    color: var(--space-light-gray); /* Ensure text in section is bright by default */
+    box-shadow: inset 0 0 60px 40px var(--space-black); /* Fade edges to outer black */
+}
+
+/* Ensure content within the section is clearly visible above the background */
+.technology-section > * {
+    position: relative; /* Ensures content is rendered above the background */
+    z-index: 1;
+}
+
+/* Enhanced heading styles for this specific section */
+.technology-section h1,
+.technology-section h2,
+.technology-section h3 {
+    color: var(--space-star-white); /* Make headings pop even more */
+    text-shadow: 0 0 8px rgba(var(--space-hyperdrive-cyan-rgb), 0.7), /* Main glow */
+                 0 0 15px rgba(var(--space-nebula-purple-rgb), 0.4); /* Secondary wider glow */
+}
+
+/* Pills - targeting the specific class and enhancing generic pill behavior */
+.project-keyword-display-pill {
+    /* These styles will apply if main.css uses these variables for this class */
+    background-color: var(--theme-pill-bg);
+    color: var(--theme-pill-text);
+    padding: 0.4em 0.8em;
+    border-radius: 15px;
+    /* More rounded for a futuristic feel */
+    font-size: 0.85em;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    /* Needed for transform */
+    margin: 2px;
+    /* Add some spacing if they are close together */
+}
+
+.project-keyword-display-pill:hover {
+    background-color: var(--theme-pill-bg-hover);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: var(--theme-glow-subtle-cyan);
+}
+
+/* Code Blocks */
+pre {
+    background-color: #0a0a14;
+    /* Slightly different dark for code blocks */
+    border: 1px solid var(--space-nebula-purple);
+    border-left: 3px solid var(--space-hyperdrive-cyan);
+    /* Accent border */
+    border-radius: 6px;
+    padding: 1em 1.5em;
+    color: var(--space-light-gray);
+    font-family: "Source Code Pro", monospace;
+    overflow-x: auto;
+    box-shadow: 0 2px 10px rgba(127, 95, 255, 0.2);
+    /* Subtle purple shadow */
+    transition: box-shadow 0.3s ease;
+}
+
+pre:hover {
+    box-shadow: 0 4px 15px rgba(127, 95, 255, 0.3), var(--theme-glow-purple-hover);
+}
+
+code {
+    /* Inline code */
+    background-color: rgba(127, 95, 255, 0.15);
+    /* Semi-transparent purple */
+    color: var(--space-nebula-pink);
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    font-family: "Source Code Pro", monospace;
+}
+
+/* Specific overrides for scroll-fade-overlay in Space theme */
+/* Creates a cosmic gradient fade that blends with the technology-section background. */
+.scroll-fade-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 75px; /* Width of the fade effect area */
+    z-index: 2;
+    pointer-events: none;
+    display: none; /* Hide the overlay */
+}
+
+/* Left cosmic fade overlay */
+.scroll-fade-overlay.fade-left {
+    left: 0;
+    background: linear-gradient(
+        to right,
+        var(--space-deep-cosmos) 0%,                          /* Blends with technology-section's darker parts */
+        rgba(var(--space-nebula-purple-rgb), 0.5) 25%,        /* Purple cosmic streak */
+        rgba(var(--space-hyperdrive-cyan-rgb), 0.35) 50%,      /* Cyan cosmic streak */
+        rgba(var(--space-deep-cosmos-rgb), 0.1) 70%,          /* Fading out the cosmic colors */
+        transparent 85%                                       /* Fade to fully transparent for items */
+    );
+}
+
+/* --- Galaxy Particle Effect for Technology Section --- */
+
+/* Ensure .technology-section is a positioning context if not already.
+   It already has position: relative and overflow: hidden from existing styles, which is perfect. */
+
+.technology-section::before,
+.technology-section::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 200%; /* Double height for seamless vertical looping. Stars will be painted on this canvas. */
+    pointer-events: none; /* So they don't interfere with content interaction */
+    /* background: transparent; Explicitly transparent - will be replaced by star layers */
+    z-index: 0; /* Positioned above the section's background but below its direct content (which is z-index: 1) */
+}
+
+/* Layer 1: Distant, small, slow-moving stars */
+.technology-section::before {
+    /* 
+      Stars are created using multiple radial-gradients.
+      Format for each star:
+      background-image: radial-gradient(circle <radius> at center, <color> 0%, <color> 100%), ...
+      background-position: X% Y%, ... (Y% can go up to 200% for the double height canvas)
+      background-size: (2*<radius>)px (2*<radius>)px, ...
+      background-repeat: no-repeat; (Applies to all)
+    */
+    background-image:
+        radial-gradient(circle 1px at center, var(--space-star-white) 0%, var(--space-star-white) 100%), radial-gradient(circle 1px at center, rgba(var(--space-star-white-rgb), 0.7) 0%, rgba(var(--space-star-white-rgb), 0.7) 100%),
+        radial-gradient(circle 1px at center, var(--space-star-white) 0%, var(--space-star-white) 100%), radial-gradient(circle 1px at center, rgba(var(--space-star-white-rgb), 0.7) 0%, rgba(var(--space-star-white-rgb), 0.7) 100%),
+        radial-gradient(circle 1px at center, var(--space-star-white) 0%, var(--space-star-white) 100%), radial-gradient(circle 1px at center, rgba(var(--space-star-white-rgb), 0.7) 0%, rgba(var(--space-star-white-rgb), 0.7) 100%),
+        radial-gradient(circle 1px at center, var(--space-star-white) 0%, var(--space-star-white) 100%), radial-gradient(circle 1px at center, rgba(var(--space-star-white-rgb), 0.6) 0%, rgba(var(--space-star-white-rgb), 0.6) 100%),
+        radial-gradient(circle 1px at center, var(--space-star-white) 0%, var(--space-star-white) 100%), radial-gradient(circle 1px at center, rgba(var(--space-star-white-rgb), 0.8) 0%, rgba(var(--space-star-white-rgb), 0.8) 100%),
+        radial-gradient(circle 1px at center, var(--space-star-white) 0%, var(--space-star-white) 100%), radial-gradient(circle 1px at center, rgba(var(--space-star-white-rgb), 0.7) 0%, rgba(var(--space-star-white-rgb), 0.7) 100%),
+        radial-gradient(circle 1px at center, var(--space-star-white) 0%, var(--space-star-white) 100%), radial-gradient(circle 1px at center, rgba(var(--space-star-white-rgb), 0.6) 0%, rgba(var(--space-star-white-rgb), 0.6) 100%),
+        radial-gradient(circle 1px at center, var(--space-star-white) 0%, var(--space-star-white) 100%), radial-gradient(circle 1px at center, rgba(var(--space-star-white-rgb), 0.8) 0%, rgba(var(--space-star-white-rgb), 0.8) 100%),
+        radial-gradient(circle 1px at center, var(--space-star-white) 0%, var(--space-star-white) 100%), radial-gradient(circle 1px at center, rgba(var(--space-star-white-rgb), 0.7) 0%, rgba(var(--space-star-white-rgb), 0.7) 100%),
+        radial-gradient(circle 1px at center, var(--space-star-white) 0%, var(--space-star-white) 100%), radial-gradient(circle 1px at center, rgba(var(--space-star-white-rgb), 0.6) 0%, rgba(var(--space-star-white-rgb), 0.6) 100%),
+        radial-gradient(circle 1px at center, var(--space-star-white) 0%, var(--space-star-white) 100%), radial-gradient(circle 1px at center, rgba(var(--space-star-white-rgb), 0.8) 0%, rgba(var(--space-star-white-rgb), 0.8) 100%),
+        radial-gradient(circle 1px at center, var(--space-star-white) 0%, var(--space-star-white) 100%), radial-gradient(circle 1px at center, rgba(var(--space-star-white-rgb), 0.7) 0%, rgba(var(--space-star-white-rgb), 0.7) 100%),
+        radial-gradient(circle 1px at center, var(--space-star-white) 0%, var(--space-star-white) 100%), radial-gradient(circle 1px at center, rgba(var(--space-star-white-rgb), 0.6) 0%, rgba(var(--space-star-white-rgb), 0.6) 100%),
+        radial-gradient(circle 1px at center, var(--space-star-white) 0%, var(--space-star-white) 100%), radial-gradient(circle 1px at center, rgba(var(--space-star-white-rgb), 0.8) 0%, rgba(var(--space-star-white-rgb), 0.8) 100%),
+        radial-gradient(circle 1px at center, var(--space-star-white) 0%, var(--space-star-white) 100%), radial-gradient(circle 1px at center, rgba(var(--space-star-white-rgb), 0.7) 0%, rgba(var(--space-star-white-rgb), 0.7) 100%);
+    background-position:
+        5% 10%, 15% 150%,
+        25% 5%, 35% 120%,
+        45% 25%, 55% 180%,
+        65% 15%, 75% 110%,
+        85% 30%, 95% 160%,
+        10% 80%, 20% 190%,
+        30% 70%, 40% 105%,
+        50% 90%, 60% 130%,
+        70% 60%, 80% 175%,
+        90% 50%, 5% 140%,
+        18% 33%, 28% 165%,
+        38% 43%, 48% 115%,
+        58% 53%, 68% 185%,
+        3% 45%, 12% 170%,
+        22% 20%, 32% 100%,
+        42% 55%, 52% 140%,
+        62% 30%, 72% 125%,
+        82% 65%, 92% 195%,
+        7% 90%, 17% 10%,
+        27% 130%, 37% 50%,
+        47% 175%, 57% 22%,
+        67% 110%, 77% 60%,
+        87% 155%, 97% 35%,
+        2% 120%, 20% 75%,
+        33% 180%, 40% 8%;
+    background-size:
+        2px 2px, 2px 2px, 2px 2px, 2px 2px, 2px 2px, 2px 2px, 2px 2px, 2px 2px,
+        2px 2px, 2px 2px, 2px 2px, 2px 2px, 2px 2px, 2px 2px, 2px 2px, 2px 2px,
+        2px 2px, 2px 2px, 2px 2px, 2px 2px, 2px 2px, 2px 2px, 2px 2px, 2px 2px,
+        2px 2px, 2px 2px, 2px 2px, 2px 2px, 2px 2px, 2px 2px, 2px 2px, 2px 2px, 2px 2px, 2px 2px,
+        2px 2px, 2px 2px, 2px 2px, 2px 2px, 2px 2px, 2px 2px, 2px 2px, 2px 2px,
+        2px 2px, 2px 2px, 2px 2px, 2px 2px, 2px 2px, 2px 2px, 2px 2px, 2px 2px;
+    background-repeat: no-repeat;
+    animation: driftGalaxyParticles 150s linear infinite;
+}
+
+/* Layer 2: Closer, slightly larger, medium-speed stars */
+.technology-section::after {
+    background-image:
+        radial-gradient(circle 2px at center, var(--space-hyperdrive-cyan) 0%, var(--space-hyperdrive-cyan) 100%), radial-gradient(circle 2px at center, rgba(var(--space-hyperdrive-cyan-rgb), 0.7) 0%, rgba(var(--space-hyperdrive-cyan-rgb), 0.7) 100%),
+        radial-gradient(circle 2px at center, var(--space-hyperdrive-cyan) 0%, var(--space-hyperdrive-cyan) 100%), radial-gradient(circle 2px at center, rgba(var(--space-hyperdrive-cyan-rgb), 0.7) 0%, rgba(var(--space-hyperdrive-cyan-rgb), 0.7) 100%),
+        radial-gradient(circle 2px at center, var(--space-hyperdrive-cyan) 0%, var(--space-hyperdrive-cyan) 100%), radial-gradient(circle 2px at center, rgba(var(--space-hyperdrive-cyan-rgb), 0.7) 0%, rgba(var(--space-hyperdrive-cyan-rgb), 0.7) 100%), /* Original ends here, 16 stars */
+        /* Added stars for ::after layer */
+        radial-gradient(circle 2px at center, var(--space-hyperdrive-cyan) 0%, var(--space-hyperdrive-cyan) 100%), radial-gradient(circle 2px at center, rgba(var(--space-hyperdrive-cyan-rgb), 0.6) 0%, rgba(var(--space-hyperdrive-cyan-rgb), 0.6) 100%),
+        radial-gradient(circle 2px at center, var(--space-hyperdrive-cyan) 0%, var(--space-hyperdrive-cyan) 100%), radial-gradient(circle 2px at center, rgba(var(--space-hyperdrive-cyan-rgb), 0.8) 0%, rgba(var(--space-hyperdrive-cyan-rgb), 0.8) 100%),
+        radial-gradient(circle 2px at center, var(--space-hyperdrive-cyan) 0%, var(--space-hyperdrive-cyan) 100%), radial-gradient(circle 2px at center, rgba(var(--space-hyperdrive-cyan-rgb), 0.7) 0%, rgba(var(--space-hyperdrive-cyan-rgb), 0.7) 100%),
+        radial-gradient(circle 2px at center, var(--space-hyperdrive-cyan) 0%, var(--space-hyperdrive-cyan) 100%), radial-gradient(circle 2px at center, rgba(var(--space-hyperdrive-cyan-rgb), 0.6) 0%, rgba(var(--space-hyperdrive-cyan-rgb), 0.6) 100%),
+        radial-gradient(circle 2px at center, var(--space-hyperdrive-cyan) 0%, var(--space-hyperdrive-cyan) 100%), radial-gradient(circle 2px at center, rgba(var(--space-hyperdrive-cyan-rgb), 0.8) 0%, rgba(var(--space-hyperdrive-cyan-rgb), 0.8) 100%),
+        radial-gradient(circle 2px at center, var(--space-hyperdrive-cyan) 0%, var(--space-hyperdrive-cyan) 100%), radial-gradient(circle 2px at center, rgba(var(--space-hyperdrive-cyan-rgb), 0.7) 0%, rgba(var(--space-hyperdrive-cyan-rgb), 0.7) 100%),
+        radial-gradient(circle 2px at center, var(--space-hyperdrive-cyan) 0%, var(--space-hyperdrive-cyan) 100%), radial-gradient(circle 2px at center, rgba(var(--space-hyperdrive-cyan-rgb), 0.6) 0%, rgba(var(--space-hyperdrive-cyan-rgb), 0.6) 100%);
+    background-position:
+        8% 22%, 18% 135%,
+        28% 12%, 38% 160%,
+        48% 32%, 58% 110%,
+        68% 20%, 78% 170%,
+        88% 42%, 98% 125%,
+        12% 85%, 22% 195%,
+        32% 75%, 42% 100%,
+        52% 95%, 62% 145%,
+        4% 50%, 14% 180%,
+        24% 28%, 34% 115%,
+        44% 60%, 54% 170%,
+        64% 35%, 74% 105%,
+        84% 70%, 94% 190%,
+        9% 10%, 19% 120%,
+        29% 40%, 39% 150%;
+    background-size:
+        4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px,
+        4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px,
+        4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px,
+        4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px, 4px 4px;
+    background-repeat: no-repeat;
+    animation: driftGalaxyParticles 100s linear infinite; /* Faster duration for parallax */
+    animation-delay: -5s; /* Start at a slightly different point in the animation cycle */
+}
+
+@keyframes driftGalaxyParticles {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(-50%); /* Moves the 200% height pseudo-element up by 50% of its own height (i.e., 100% of section height) */
+    }
+}
+
+
+/* Right cosmic fade overlay */
+.scroll-fade-overlay.fade-right {
+    right: 0;
+    background: linear-gradient(
+        to left,
+        var(--space-deep-cosmos) 0%,                          /* Blends with technology-section's darker parts */
+        rgba(var(--space-nebula-purple-rgb), 0.5) 25%,        /* Purple cosmic streak */
+        rgba(var(--space-hyperdrive-cyan-rgb), 0.35) 50%,      /* Cyan cosmic streak */
+        rgba(var(--space-deep-cosmos-rgb), 0.1) 70%,          /* Fading out the cosmic colors */
+        transparent 85%                                       /* Fade to fully transparent for items */
+    );
+}

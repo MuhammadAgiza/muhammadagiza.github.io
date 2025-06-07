@@ -36,9 +36,9 @@ module Jekyll
 
         new_page = PageWithoutAFile.new(site, site.source, dir_path, "index.html")
         new_page.content = page_content
-        new_page.data['layout'] = 'home' # As per your original /projects/keyword.html
+        new_page.data['layout'] = 'home'
         new_page.data['keyword'] = keyword
-        new_page.data['title'] = "Projects - #{keyword}" # Optional: for better SEO and tab titles
+        new_page.data['title'] = "Projects - #{keyword}"
         # The permalink is implicitly defined by the dir_path and name.
 
         site.pages << new_page

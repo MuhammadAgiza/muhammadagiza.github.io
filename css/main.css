@@ -7,6 +7,7 @@
     --theme-text-color: #e0e6f0;
     --theme-footer-bg-color: #000;
     --theme-projects-bg-color: #000;
+    --theme-projects-grid-bg-color: var(--theme-projects-bg-color);
     --theme-changelog-bg-color: #000;
     --theme-page-bg-color: #000;
     --theme-pill-bg: #7f5fff;
@@ -87,6 +88,14 @@ h1:hover .wave-emoji {
     animation: wave 2s infinite;
     }
 */
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 8px 25px var(--theme-shadow-card-strong), 0 0 20px var(--theme-glow-purple-hover);
+}
 
 .name-email-link {
     position: relative;
@@ -391,8 +400,27 @@ h1:hover .wave-emoji {
 .resume-interest-badge,
 .resume-skill-badge {
     background-color: var(--theme-pill-bg);
-    color: var(--theme-pill-text);;
+    color: var(--theme-pill-text);
     /* Ensuring good contrast against the pill background */
     border: 1px solid var(--theme-pill-bg-hover);
     /* Using a slightly different shade for the border */
+}
+
+/* Custom Themed Warning Alert */
+.alert-theme-warning {
+    background-color: var(--theme-warning-bg);
+    color: var(--theme-warning-color);
+    border: 1px solid var(--theme-warning-border);
+    /* Leverages Bootstrap .alert base for padding, margin, etc. */
+}
+
+.alert-theme-warning a,
+.alert-theme-warning .alert-link {
+    /* Targets general links and .alert-link if used */
+    color: var(--theme-warning-link);
+}
+
+.alert-theme-warning a:hover,
+.alert-theme-warning .alert-link:hover {
+    color: var(--theme-warning-link-hover);
 }
