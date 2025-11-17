@@ -12,6 +12,7 @@ labels:
   - Nodejs
   - RESTful APIs
   - E-Commerce
+  - Payment Gateways
 summary: "A UAE-based grocery delivery app rebuilt from scratch with a focus on vendor-first shopping, multilingual support, and same-day delivery."
 ---
 **Tazj – Fresh Grocery Delivery App (UAE)**

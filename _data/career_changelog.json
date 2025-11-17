@@ -107,12 +107,12 @@
             ]
         },
         {
-            "version": "2.3.0",
-            "title": "Freelance Backend Engineer",
-            "date": "2025",
+            "version": "3.0.0",
+            "title": "Software Engineer",
+            "date": "Jun 2025",
             "added": [
-                "Use of <code>PHP</code>, <code>Laravel</code>.",
-                "Use of <a href=\"https://en.wikipedia.org/wiki/vibe_coding\" target=\"_blank\">Vibe Coding</a>."
+                "Joined Zeem a ride-sharing product.",
+                "Used <code>PHP</code> and <code>Laravel</code> to build scalable APIs."
             ],
             "changed": [],
             "deprecated": [],

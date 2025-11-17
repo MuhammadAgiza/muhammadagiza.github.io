@@ -131,12 +131,31 @@
   ],
   "work": [
     {
+      "company": "Zeem",
+      "position": "Software Engineer",
+      "website": "https://zeem-sa.com",
+      "startDate": "Jun 2025",
+      "endDate": "Now",
+      "location": "Remote",
+      "summary": "Software Department",
+      "highlights": [
+        "Contributed to the backend development of Zeem’s ride-sharing and logistics platform using Laravel, focusing on scalable and maintainable solutions.",
+        "Implemented and maintained RESTful APIs powering real-time features such as trip tracking, complaint management, and multi-role access for users, drivers, and admins.",
+        "Applied SOLID principles and clean architecture patterns to ensure code reliability and ease of future enhancements.",
+        "Collaborated with product managers and operations teams in Agile sprints to deliver backend features aligned with business goals.",
+        "Participated in setting up and improving CI/CD pipelines, enhancing code quality and deployment efficiency across the platform.",
+        "Defined clear timelines, scope, and deliverables in coordination with stakeholders to ensure smooth feature planning and execution.",
+        "Ensured backend tasks and priorities were aligned with broader business objectives and operational needs.",
+        "Assisted in gathering, refining, and clarifying product requirements to support accurate implementation and user-centered features."
+      ]
+    },
+    {
       "company": "Dipdux Analytica",
       "position": "Software Backend Engineer",
       "website": "https://dipdux.com",
       "startDate": "Oct 2021",
       "endDate": "Nov 2023",
-      "location": "Remotely",
+      "location": "Remote",
       "summary": "Software Department",
       "highlights": [
         "Designed and developed robust REST APIs leveraging Node.js, integrating with databases like MySQL and Firebase to enhance backend system stability and functionality.",
