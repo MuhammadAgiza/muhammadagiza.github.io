@@ -6,6 +6,7 @@ thumbnail: img/sastamah/sastamah_square.jpg
 title: "Sastamah"
 date: 2024
 published: true
+priority: 0
 labels:
   - TypeScript
   - MySql
@@ -35,8 +36,8 @@ As part of the development team, I was responsible for backend development, focu
 ## Technologies Used
 - **Language:** TypeScript  
 - **Framework:** Node.js with Express.js  
-- **ORM:** Prisma (for database management)  
-- **Database:** MySQL (through Prisma ORM)  
+- **ORM:** Prisma
+- **Database:** MySQL
 - **Authentication:** JWT-based secure authentication  
 - **Notifications:** Firebase Cloud Messaging (FCM) integration  
 

@@ -22,11 +22,11 @@
     </div>
 
     <div class="row row-cols-1 g-4">
-      {% assign all_project_pages = site.pages | where: "type", "project" | sort: "date" | reverse %}
+      {% assign all_project_pages = site.pages | where: "type", "project" | sort: "priority" | sort: "date" | reverse %}
       {% assign displayed_any_project = false %}
 
       {% for page in all_project_pages %}
-      {% unless page.draft %}
+      {% if page.published %}
       {% assign show_this_project = true %}
 
       {% if keyword and keyword != "" %}
@@ -43,8 +43,8 @@
         {% include projects/project-card.html page=page %}
       </div>
       {% assign displayed_any_project = true %}
+      {% endif %} 
       {% endif %}
-      {% endunless %}
       {% endfor %}
 
       {% unless displayed_any_project %}

@@ -52,10 +52,8 @@ The app was developed as a **non-profit initiative**, and despite its positive r
 - **Languages & Runtime:** TypeScript, JavaScript (Node.js)
 - **Database:** MySQL
 - **ORM:** Prisma
-- **Security:** bcrypt (or equivalent) for password hashing
 - **Cloud & Messaging:** Firebase, FCM
 - **Architecture:** REST APIs, modular structure, middleware-based request validation
-- **Tools:** Git, CI/CD pipelines (if applicable)
 
 ## Key Features
 

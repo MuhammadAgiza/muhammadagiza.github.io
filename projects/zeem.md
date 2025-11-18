@@ -6,6 +6,7 @@ image: img/zeem/zeem_square.png
 thumbnail: img/zeem/zeem_square.png
 date: 2025
 published: true
+priority: 1
 labels:
   - Laravel
   - Nodejs
@@ -55,8 +56,6 @@ As a backend software engineer, I contributed to the development and scaling of 
 - **API Architecture**: RESTful APIs  
 - **Payments**: Multi-provider gateway integrations
 - **Notifications**: Firebase Cloud Messaging (FCM)  
-- **DevOps**: CI/CD pipelines  
-- **Project Management**: Jira, GitHub
 
 ## Key Features
 

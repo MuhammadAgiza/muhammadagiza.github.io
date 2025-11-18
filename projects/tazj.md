@@ -6,6 +6,7 @@ image: img/tazj/tazj_square.jpg
 thumbnail: img/tazj/tazj_square.jpg
 date: 2023
 published: true
+priority: 3
 labels:
   - TypeScript
   - MySql
@@ -61,4 +62,3 @@ As the sole backend developer on the project, I led the full redevelopment of th
 - Enabled vendors to operate independently and manage fulfillment efficiently  
 - Scaled platform for future growth in features, user base, and language support  
 - Elevated the user experience by integrating speed, freshness, and trust
-

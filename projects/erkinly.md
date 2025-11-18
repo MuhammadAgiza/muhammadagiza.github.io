@@ -6,6 +6,7 @@ thumbnail: img/erkinly/erkinly-square.jpg
 title: "Erkinly"
 date: 2023
 published: true
+priority: 0
 labels:
   - TypeScript
   - Nodejs
@@ -99,5 +100,3 @@ All payments and user verifications are managed securely through the mobile appl
 
 ## Source Code:
 GitHub Organization: [https://github.com/Erkinly](https://github.com/Erkinly)
-
-
