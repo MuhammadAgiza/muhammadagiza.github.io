@@ -28,7 +28,7 @@ The system enables users to view payment schedules, monitor due installments, ac
 Built using **Node.js** and **TypeScript**, Arkania focuses on financial clarity, reliability, and user convenience within the real estate industry.
 
 **Available on:**  
-- <a href="https://play.google.com/store/apps/details?id=com.arkaniaeg" target="_blank">Google Play</a>  
+- <a href="https://play.google.com/store/apps/details?id=com.arkania.app" target="_blank">Google Play</a>  
 - <a href="https://apps.apple.com/eg/app/arkania-developments/id6479214341" target="_blank">App Store</a>  
 
 ## My Contributions
